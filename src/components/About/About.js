@@ -1,6 +1,7 @@
 import React from "react";
-import "../css/Color.css";
-import "../css/Animated.css";
+import "./About.css";
+import "./Bootstrap.css";
+import "./Color.css";
 
 const Nosotros = () => {
   return (
@@ -15,12 +16,12 @@ const Nosotros = () => {
                 data-wow-duration="700ms"
               >
                 <h2 className="title">
-                  <span>Welcome</span> to Our Company
+                  <span>Bienvenido a </span> Protege Green House
                 </h2>
                 <span className="sub-title">
                   Elit ultricies adipiscing ornare. Rutrum sapien aliquet
                   mollis. Pretium condimentum. Cursus elit hac fames laoreet non
-                  nec facilisis quis dui.{" "}
+                  nec facilisis quis dui.
                 </span>
                 <div className="text-area">
                   <p>
@@ -58,7 +59,7 @@ const Nosotros = () => {
                       >
                         230
                       </div>
-                      <span>Employees</span>
+                      <span>Empleados</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -75,7 +76,7 @@ const Nosotros = () => {
                       >
                         141
                       </div>
-                      <span>Satisfied Clients</span>
+                      <span>Clientes Satisfechos</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -92,7 +93,7 @@ const Nosotros = () => {
                       >
                         172
                       </div>
-                      <span>Projects Done</span>
+                      <span>Proyectos Terminados</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -109,7 +110,7 @@ const Nosotros = () => {
                       >
                         2347
                       </div>
-                      <span>Days Experience</span>
+                      <span>Dias construyendo</span>
                     </div>
                   </div>
                 </div>
@@ -144,7 +145,10 @@ const Nosotros = () => {
             </div>
             <div className="col-md-4 col-sm-4">
               <div className="dark-gradient about-link">
-                <img src="images/our_service/9.png" alt="" />
+                <img
+                  src="images/our_service/9.png"
+                  alt="dddddddddddddsssssssssssf"
+                />
                 <div className="overlay">
                   <h5 className="inner-title">Agricultural Research</h5>
                   <a href="#" className="btn-link">
