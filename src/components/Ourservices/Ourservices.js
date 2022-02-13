@@ -1,7 +1,4 @@
 import React from "react";
-import "./About.css";
-import "./Bootstrap.css";
-import "./Color.css";
 
 const Ourservices = () => {
   return (
