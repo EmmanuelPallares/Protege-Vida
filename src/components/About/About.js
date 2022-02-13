@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./About.css";
 const Nosotros = () => {
   return (
@@ -18,7 +19,7 @@ const Nosotros = () => {
                 <span className="sub-title">
                   Elit ultricies adipiscing ornare. Rutrum sapien aliquet
                   mollis. Pretium condimentum. Cursus elit hac fames laoreet non
-                  nec facilisis quis dui.{" "}
+                  nec facilisis quis dui.
                 </span>
                 <div className="text-area">
                   <p>
