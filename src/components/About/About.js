@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./About.css";
 const Nosotros = () => {
   return (
-    <>
-      <section className="full-row" id="nosotros">
+    <div className="margin-top-100">
+      <section className="full-row about-company">
         <div className="container">
           <div className="row">
             <div className="col-md-8">
@@ -13,12 +13,12 @@ const Nosotros = () => {
                 data-wow-duration="700ms"
               >
                 <h2 className="title">
-                  <span>Bienvenido a </span> Protege Green House
+                  <span>Welcome</span> to Our Company
                 </h2>
                 <span className="sub-title">
                   Elit ultricies adipiscing ornare. Rutrum sapien aliquet
                   mollis. Pretium condimentum. Cursus elit hac fames laoreet non
-                  nec facilisis quis dui.
+                  nec facilisis quis dui.{" "}
                 </span>
                 <div className="text-area">
                   <p>
@@ -41,7 +41,7 @@ const Nosotros = () => {
                 </div>
               </div>
               <div className="row">
-                <div className="about-company fact-counter">
+                <div className="fact-counter">
                   <div className="col-lg-3 col-sm-3 col-xs-6">
                     <div
                       className="count color-dark wow fadeIn"
@@ -56,7 +56,7 @@ const Nosotros = () => {
                       >
                         230
                       </div>
-                      <span>Empleados</span>
+                      <span>Employees</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -73,7 +73,7 @@ const Nosotros = () => {
                       >
                         141
                       </div>
-                      <span>Clientes Satisfechos</span>
+                      <span>Satisfied Clients</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -90,7 +90,7 @@ const Nosotros = () => {
                       >
                         172
                       </div>
-                      <span>Proyectos Terminados</span>
+                      <span>Projects Done</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -107,14 +107,18 @@ const Nosotros = () => {
                       >
                         2347
                       </div>
-                      <span>Dias construyendo</span>
+                      <span>Days Experience</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-md-4">
-              <img className="none-mobile" src="" alt="iamagen de nosotros" />
+              <img
+                className="none-mobile"
+                src="images/banner/welcome.png"
+                alt=""
+              />
             </div>
           </div>
           <div className="row">
@@ -142,10 +146,7 @@ const Nosotros = () => {
             </div>
             <div className="col-md-4 col-sm-4">
               <div className="dark-gradient about-link">
-                <img
-                  src="images/our_service/9.png"
-                  alt="dddddddddddddsssssssssssf"
-                />
+                <img src="images/our_service/9.png" alt="" />
                 <div className="overlay">
                   <h5 className="inner-title">Agricultural Research</h5>
                   <a href="#" className="btn-link">
@@ -157,7 +158,7 @@ const Nosotros = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

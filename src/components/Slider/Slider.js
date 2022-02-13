@@ -1,13 +1,14 @@
 import React from "react";
+import exampleimage from "../../images/exampleimage.jpg";
 
 const Slider = () => {
   return (
     <>
-      <div id="slider" className="no-padding">
-        <div className="tp-banner-container revolution-slider">
-          <div className="tp-banner">
+      <div id="slider" class="no-padding">
+        <div class="tp-banner-container revolution-slider">
+          <div class="tp-banner">
             <ul>
-              <div
+              <li
                 data-transition="slidedown"
                 data-slotamount="1"
                 data-masterspeed="1500"
@@ -15,7 +16,7 @@ const Slider = () => {
                 data-saveperformance="off"
               >
                 <img
-                  src="images/slider/1.png"
+                  src={exampleimage}
                   alt="kenburns6"
                   data-bgposition="center top"
                   data-kenburns="on"
@@ -25,11 +26,9 @@ const Slider = () => {
                   data-bgfitend="100"
                   data-bgpositionend="center center"
                 />
-                {/* <!-- LAYERS --> */}
 
-                {/* <!-- LAYER NR. 1 --> */}
                 <div
-                  className="tp-caption fullgradient_overlay tp-fade fadeout tp-resizeme"
+                  class="tp-caption fullgradient_overlay tp-fade fadeout tp-resizeme"
                   data-x="center"
                   data-hoffset="0"
                   data-y="center"
@@ -46,9 +45,8 @@ const Slider = () => {
                   style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;"
                 ></div>
 
-                {/* <!-- LAYER NR. 2 --> */}
                 <div
-                  className="tp-caption white_heavy_45 tp-fade fadeout tp-resizeme"
+                  class="tp-caption white_heavy_45 tp-fade fadeout tp-resizeme"
                   data-x="center"
                   data-hoffset="0"
                   data-y="center"
@@ -67,9 +65,8 @@ const Slider = () => {
                   MAKE YOUR HOME CHARMING
                 </div>
 
-                {/* <!-- LAYER NR. 3 --> */}
                 <div
-                  className="tp-caption whiteline_long customin fadeout tp-resizeme"
+                  class="tp-caption whiteline_long customin fadeout tp-resizeme"
                   data-x="center"
                   data-hoffset="0"
                   data-y="center"
@@ -87,9 +84,8 @@ const Slider = () => {
                   style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"
                 ></div>
 
-                {/* <!-- LAYER NR. 4 --> */}
                 <div
-                  className="tp-caption light_medium_20 lfb fadeout tp-resizeme"
+                  class="tp-caption light_medium_20 lfb fadeout tp-resizeme"
                   data-x="center"
                   data-hoffset="0"
                   data-y="center"
@@ -112,9 +108,8 @@ const Slider = () => {
                   velit lacinia tortor condimentum.
                 </div>
 
-                {/* <!-- LAYER NR. 5 --> */}
                 <div
-                  className="tp-caption customin tp-resizeme rs-parallaxlevel-0"
+                  class="tp-caption customin tp-resizeme rs-parallaxlevel-0"
                   data-x="center"
                   data-hoffset="0"
                   data-y="530"
@@ -129,14 +124,14 @@ const Slider = () => {
                   data-linktoslide="next"
                   style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"
                 >
-                  <div className="text-center">
-                    <a href="get_quote.html" className="btn btn-primary">
+                  <div class="text-center">
+                    <a href="get_quote.html" class="btn btn-primary">
                       Get a Quote
                     </a>
                   </div>
                 </div>
-              </div>
-              {/* <!-- SLIDE  --> */}
+              </li>
+
               <li
                 data-transition="slideleft"
                 data-slotamount="1"
@@ -144,9 +139,8 @@ const Slider = () => {
                 data-delay="15000"
                 data-saveperformance="off"
               >
-                {/* <!-- MAIN IMAGE --> */}
                 <img
-                  src="images/slider/2.png"
+                  src={exampleimage}
                   alt="kenburns3"
                   data-bgposition="left top"
                   data-kenburns="on"
@@ -156,11 +150,9 @@ const Slider = () => {
                   data-bgfitend="100"
                   data-bgpositionend="right bottom"
                 />
-                {/* <!-- LAYERS --> */}
 
-                {/* <!-- LAYER NR. 1 --> */}
                 <div
-                  className="tp-caption fullgradient_overlay tp-fade fadeout tp-resizeme"
+                  class="tp-caption fullgradient_overlay tp-fade fadeout tp-resizeme"
                   data-x="center"
                   data-hoffset="0"
                   data-y="center"
@@ -177,9 +169,8 @@ const Slider = () => {
                   style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;"
                 ></div>
 
-                {/* <!-- LAYER NR. 2 --> */}
                 <div
-                  className="tp-caption white_heavy_45 skewfromleftshort fadeout tp-resizeme rs-parallaxlevel-10"
+                  class="tp-caption white_heavy_45 skewfromleftshort fadeout tp-resizeme rs-parallaxlevel-10"
                   data-x="center"
                   data-hoffset="0"
                   data-y="center"
@@ -197,9 +188,8 @@ const Slider = () => {
                   WE CAN HELP YOU TO MAKE A GARDEN
                 </div>
 
-                {/* <!-- LAYER NR. 3 --> */}
                 <div
-                  className="tp-caption whiteline_long customin fadeout tp-resizeme"
+                  class="tp-caption whiteline_long customin fadeout tp-resizeme"
                   data-x="center"
                   data-hoffset="0"
                   data-y="center"
@@ -217,9 +207,8 @@ const Slider = () => {
                   style="z-index: 4; top: 300px; max-width: auto; max-height: auto; white-space: nowrap;"
                 ></div>
 
-                {/* <!-- LAYER NR. 4 --> */}
                 <div
-                  className="tp-caption light_medium_20 lfb fadeout tp-resizeme"
+                  class="tp-caption light_medium_20 lfb fadeout tp-resizeme"
                   data-x="center"
                   data-hoffset="0"
                   data-y="center"
@@ -242,9 +231,8 @@ const Slider = () => {
                   ridiculus duis odio
                 </div>
 
-                {/* <!-- LAYER NR. 5 --> */}
                 <div
-                  className="tp-caption customin tp-resizeme rs-parallaxlevel-0"
+                  class="tp-caption customin tp-resizeme rs-parallaxlevel-0"
                   data-x="center"
                   data-hoffset="0"
                   data-y="500"
@@ -259,8 +247,8 @@ const Slider = () => {
                   data-linktoslide="next"
                   style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"
                 >
-                  <div className="text-center">
-                    <a href="contact.html" className="btn btn-default">
+                  <div class="text-center">
+                    <a href="contact.html" class="btn btn-default">
                       Get In Touch
                     </a>
                   </div>
@@ -273,9 +261,8 @@ const Slider = () => {
                 data-delay="15000"
                 data-saveperformance="off"
               >
-                {/* <!-- MAIN IMAGE --> */}
                 <img
-                  src="images/slider/5.png"
+                  src={exampleimage}
                   alt="kenburns6"
                   data-bgposition="center top"
                   data-kenburns="on"
@@ -285,11 +272,9 @@ const Slider = () => {
                   data-bgfitend="100"
                   data-bgpositionend="center center"
                 />
-                {/* <!-- LAYERS --> */}
 
-                {/* <!-- LAYER NR. 1 --> */}
                 <div
-                  className="tp-caption fullgradient_overlay tp-fade fadeout tp-resizeme"
+                  class="tp-caption fullgradient_overlay tp-fade fadeout tp-resizeme"
                   data-x="center"
                   data-hoffset="0"
                   data-y="center"
@@ -306,9 +291,8 @@ const Slider = () => {
                   style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;"
                 ></div>
 
-                {/* <!-- LAYER NR. 2 --> */}
                 <div
-                  className="tp-caption white_heavy_45 tp-fade fadeout tp-resizeme"
+                  class="tp-caption white_heavy_45 tp-fade fadeout tp-resizeme"
                   data-x="left"
                   data-hoffset="50"
                   data-y="center"
@@ -327,9 +311,8 @@ const Slider = () => {
                   WE HAVE RESEARCH CENTER
                 </div>
 
-                {/* <!-- LAYER NR. 3 --> */}
                 <div
-                  className="tp-caption whiteline_long customin fadeout tp-resizeme"
+                  class="tp-caption whiteline_long customin fadeout tp-resizeme"
                   data-x="left"
                   data-hoffset="50"
                   data-y="center"
@@ -347,9 +330,8 @@ const Slider = () => {
                   style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"
                 ></div>
 
-                {/* <!-- LAYER NR. 4 --> */}
                 <div
-                  className="tp-caption light_medium_20 lfb fadeout tp-resizeme"
+                  class="tp-caption light_medium_20 lfb fadeout tp-resizeme"
                   data-x="left"
                   data-hoffset="50"
                   data-y="center"
@@ -371,9 +353,8 @@ const Slider = () => {
                   ridiculus duis odio.
                 </div>
 
-                {/* <!-- LAYER NR. 5 --> */}
                 <div
-                  className="tp-caption white_bold_bg_15 sfr fadeout tp-resizeme rs-parallaxlevel-10"
+                  class="tp-caption white_bold_bg_15 sfr fadeout tp-resizeme rs-parallaxlevel-10"
                   data-x="left"
                   data-hoffset="80"
                   data-y="center"
@@ -391,9 +372,8 @@ const Slider = () => {
                   Agricultural Research
                 </div>
 
-                {/* <!-- LAYER NR. 6 --> */}
                 <div
-                  className="tp-caption greenbox30 customin fadeout tp-resizeme rs-parallaxlevel-10"
+                  class="tp-caption greenbox30 customin fadeout tp-resizeme rs-parallaxlevel-10"
                   data-x="left"
                   data-hoffset="50"
                   data-y="center"
@@ -412,9 +392,8 @@ const Slider = () => {
                   &nbsp;
                 </div>
 
-                {/* <!-- LAYER NR. 7 --> */}
                 <div
-                  className="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
+                  class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
                   data-x="left"
                   data-hoffset="56"
                   data-y="center"
@@ -429,17 +408,16 @@ const Slider = () => {
                   style="z-index: 8;"
                 >
                   <img
-                    src="images/dummy.png"
-                    alt=""
+                    src={exampleimage}
+                    alt="sdfgZGg"
                     data-ww="17"
                     data-hh="17"
                     data-lazyload="images/check.png"
                   />
                 </div>
 
-                {/* <!-- LAYER NR. 8 --> */}
                 <div
-                  className="tp-caption white_bold_bg_15 sfr fadeout tp-resizeme rs-parallaxlevel-10"
+                  class="tp-caption white_bold_bg_15 sfr fadeout tp-resizeme rs-parallaxlevel-10"
                   data-x="left"
                   data-hoffset="80"
                   data-y="center"
@@ -457,9 +435,8 @@ const Slider = () => {
                   Interior Architecture
                 </div>
 
-                {/* <!-- LAYER NR. 9 --> */}
                 <div
-                  className="tp-caption greenbox30 customin fadeout tp-resizeme rs-parallaxlevel-10"
+                  class="tp-caption greenbox30 customin fadeout tp-resizeme rs-parallaxlevel-10"
                   data-x="left"
                   data-hoffset="50"
                   data-y="center"
@@ -478,9 +455,8 @@ const Slider = () => {
                   &nbsp;
                 </div>
 
-                {/* <!-- LAYER NR. 10 --> */}
                 <div
-                  className="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
+                  class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
                   data-x="left"
                   data-hoffset="56"
                   data-y="center"
@@ -495,17 +471,16 @@ const Slider = () => {
                   style="z-index: 8;"
                 >
                   <img
-                    src="images/dummy.png"
-                    alt=""
+                    src={exampleimage}
+                    alt="ASFFA"
                     data-ww="17"
                     data-hh="17"
                     data-lazyload="images/check.png"
                   />
                 </div>
 
-                {/* <!-- LAYER NR. 11 --> */}
                 <div
-                  className="tp-caption white_bold_bg_15 sfr fadeout tp-resizeme rs-parallaxlevel-10"
+                  class="tp-caption white_bold_bg_15 sfr fadeout tp-resizeme rs-parallaxlevel-10"
                   data-x="left"
                   data-hoffset="80"
                   data-y="center"
@@ -523,9 +498,8 @@ const Slider = () => {
                   Technology and Tools
                 </div>
 
-                {/* <!-- LAYER NR. 12 --> */}
                 <div
-                  className="tp-caption greenbox30 customin fadeout tp-resizeme rs-parallaxlevel-10"
+                  class="tp-caption greenbox30 customin fadeout tp-resizeme rs-parallaxlevel-10"
                   data-x="left"
                   data-hoffset="50"
                   data-y="center"
@@ -544,9 +518,8 @@ const Slider = () => {
                   &nbsp;
                 </div>
 
-                {/* <!-- LAYER NR. 13 --> */}
                 <div
-                  className="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
+                  class="tp-caption arrowicon customin fadeout rs-parallaxlevel-10"
                   data-x="left"
                   data-hoffset="56"
                   data-y="center"
@@ -561,8 +534,8 @@ const Slider = () => {
                   style="z-index: 8;"
                 >
                   <img
-                    src="images/dummy.png"
-                    alt=""
+                    src={exampleimage}
+                    alt="sasd"
                     data-ww="17"
                     data-hh="17"
                     data-lazyload="images/check.png"
@@ -570,7 +543,7 @@ const Slider = () => {
                 </div>
               </li>
             </ul>
-            <div className="tp-bannertimer"></div>
+            <div class="tp-bannertimer"></div>
           </div>
         </div>
       </div>
