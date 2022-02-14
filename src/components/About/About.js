@@ -1,6 +1,6 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import "./About.css";
+
 const Nosotros = () => {
   return (
     <div className="margin-top-100">

@@ -4,27 +4,27 @@ const Footer = () => {
   return (
     <div>
       <footer id="footer">
-        <div class="main-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="footer-widget">
-                  <div class="footer-logo">
+        <div className="main-footer">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-3 col-sm-6">
+                <div className="footer-widget">
+                  <div className="footer-logo">
                     <a href="index.html">
                       <img
-                        class="logo-bottom"
+                        className="logo-bottom"
                         src="images/logo/logo.png"
                         alt=""
                       />
                     </a>
                   </div>
-                  <div class="footer-content">
+                  <div className="footer-content">
                     <p>
                       Diam eleifend id rhoncus. Eget duis non nulla hendrerit
                       litora pulvinar, nim rquent augue eros tristique purus sem
                       amet non potenti.
                     </p>
-                    <ul class="ft-list">
+                    <ul className="ft-list">
                       <li>
                         <span>Dirección :</span>3112 Roy Alley Denver 80216, USA
                       </li>
@@ -42,62 +42,89 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="footer-widget">
-                  <h3 class="footer-title">Servicios</h3>
-                  <div class="footer-content">
-                    <ul class="ft-list">
+              <div className="col-md-3 col-sm-6">
+                <div className="footer-widget">
+                  <h3 className="footer-title">Servicios</h3>
+                  <div className="footer-content">
+                    <ul className="ft-list">
                       <li>
                         <a href="tree-plantation.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                          <i
+                            className="fa fa-angle-right"
+                            aria-hidden="true"
+                          ></i>{" "}
                           Tree Planting Service
                         </a>
                       </li>
                       <li>
                         <a href="garden-care.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                          <i
+                            className="fa fa-angle-right"
+                            aria-hidden="true"
+                          ></i>{" "}
                           Garden Care Service
                         </a>
                       </li>
                       <li>
                         <a href="watering-garden.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                          <i
+                            className="fa fa-angle-right"
+                            aria-hidden="true"
+                          ></i>{" "}
                           Watering Garden Service
                         </a>
                       </li>
                       <li>
                         <a href="garden-design.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                          <i
+                            className="fa fa-angle-right"
+                            aria-hidden="true"
+                          ></i>{" "}
                           Garden Design Service
                         </a>
                       </li>
                       <li>
                         <a href="gutter-repair.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                          <i
+                            className="fa fa-angle-right"
+                            aria-hidden="true"
+                          ></i>{" "}
                           Gutter Repair Service
                         </a>
                       </li>
                       <li>
                         <a href="lawn-care.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                          <i
+                            className="fa fa-angle-right"
+                            aria-hidden="true"
+                          ></i>{" "}
                           Lawn Care Service
                         </a>
                       </li>
                       <li>
                         <a href="land-design.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                          <i
+                            className="fa fa-angle-right"
+                            aria-hidden="true"
+                          ></i>{" "}
                           Landscape Design Service
                         </a>
                       </li>
                       <li>
                         <a href="tree-surgery.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                          <i
+                            className="fa fa-angle-right"
+                            aria-hidden="true"
+                          ></i>{" "}
                           Tree Surgery Service
                         </a>
                       </li>
                       <li>
                         <a href="agricultural-research.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                          <i
+                            className="fa fa-angle-right"
+                            aria-hidden="true"
+                          ></i>{" "}
                           Agricultural Research
                         </a>
                       </li>
@@ -105,13 +132,13 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="footer-widget">
-                  <h3 class="footer-title">Latest Post Facebook</h3>
-                  <div class="footer-content">
-                    <div class="tweet">
-                      <i class="fa fa-twitter"></i>
-                      <div class="twt-txt">
+              <div className="col-md-3 col-sm-6">
+                <div className="footer-widget">
+                  <h3 className="footer-title">Latest Post Facebook</h3>
+                  <div className="footer-content">
+                    <div className="tweet">
+                      <i className="fa fa-twitter"></i>
+                      <div className="twt-txt">
                         <a href="#">
                           Massa dolor. Blandit tempor. Facilisis habitasse.
                           Mollis. Tristique.
@@ -119,10 +146,10 @@ const Footer = () => {
                         <span>24 minuts ago</span>
                       </div>
                     </div>
-                    <div class="tweet">
+                    <div className="tweet">
                       {" "}
-                      <i class="fa fa-twitter"></i>
-                      <div class="twt-txt">
+                      <i className="fa fa-twitter"></i>
+                      <div className="twt-txt">
                         {" "}
                         <a href="#">
                           Massa dolor. Blandit tempor. Facilisis habitasse.
@@ -131,10 +158,10 @@ const Footer = () => {
                         <span>3 hours ago</span>
                       </div>
                     </div>
-                    <div class="tweet">
+                    <div className="tweet">
                       {" "}
-                      <i class="fa fa-twitter"></i>
-                      <div class="twt-txt">
+                      <i className="fa fa-twitter"></i>
+                      <div className="twt-txt">
                         {" "}
                         <a href="#">
                           Massa dolor. Blandit tempor. Facilisis habitasse.
@@ -146,11 +173,11 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="footer-widget">
-                  <h3 class="footer-title">Instagram Feed</h3>
-                  <div class="footer-content">
-                    <ul class="ins-img">
+              <div className="col-md-3 col-sm-6">
+                <div className="footer-widget">
+                  <h3 className="footer-title">Instagram Feed</h3>
+                  <div className="footer-content">
+                    <ul className="ins-img">
                       <li>
                         <a href="#">
                           <img src="images/instagram/1.png" alt="" />
@@ -201,32 +228,32 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="media-footer">
+            <div className="row">
+              <div className="col-md-12">
+                <ul className="media-footer">
                   <li>
                     <a href="#">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                      <i className="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                      <i className="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      <i className="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-google-plus" aria-hidden="true"></i>
+                      <i className="fa fa-google-plus" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                      <i className="fa fa-pinterest-p" aria-hidden="true"></i>
                     </a>
                   </li>
                 </ul>
