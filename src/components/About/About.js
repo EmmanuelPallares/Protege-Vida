@@ -1,7 +1,25 @@
 import React from "react";
 import "./About.css";
+import { gql, useQuery } from "urql";
+
+const AboutText = gql`
+  {
+    abouts {
+      tituloPrincipal
+      subtituloAbout
+      subtituloAbout2
+    }
+  }
+`;
 
 const Nosotros = () => {
+  const [result] = useQuery({ query: AboutText });
+
+  const { data, fetching, error } = result;
+
+  if (fetching) return <p>Fetching products</p>;
+  if (error) return <p>Oh no... {error.message}</p>;
+  console.log(result.data.abouts[0]);
   return (
     <div className="margin-top-100">
       <section className="full-row about-company">
@@ -14,36 +32,19 @@ const Nosotros = () => {
                 data-wow-duration="700ms"
               >
                 <h2 className="title">
-                  <span>Welcome</span> to Our Company
+                  <span>Bienvenido a </span>
+                  {result.data.abouts[0].tituloPrincipal}
                 </h2>
                 <span className="sub-title">
-                  Elit ultricies adipiscing ornare. Rutrum sapien aliquet
-                  mollis. Pretium condimentum. Cursus elit hac fames laoreet non
-                  nec facilisis quis dui.
+                  {result.data.abouts[0].subtituloAbout}
                 </span>
                 <div className="text-area">
-                  <p>
-                    Laoreet et est Inceptos litora turpis dis netus ad mus,
-                    porttitor, risus curabitur magnis vehicula Mus dignissim mi
-                    ut tincidunt porttitor eget cras platea. Tortor ligula
-                    turpis lorem laoreet nunc curabitur mattis eget habitasse
-                    malesuada quis suspendisse torquent imperdiet eleifend pede
-                    praesent ridiculus mattis egestas. Integer ipsum imperdiet,
-                    amet. Aliquam ipsum. Nulla. Nibh sit justo rutrum primis
-                    cras id, pellentesque egestas iaculis felis ac vivamus
-                    mattis, mollis. Montes quis aptent cubilia vulputate tempus.
-                  </p>
-                  <p>
-                    Fames habitant sociis euismod taciti donec sollicitudin.
-                    Lacinia potenti tortor mattis consectetuer potenti. Facilisi
-                    lobortis. Eget, integer netus suspendisse iaculis odio justo
-                    nulla aptent vehicula metus mollis.
-                  </p>
+                  <p>{result.data.abouts[0].subtituloAbout2}</p>
                 </div>
               </div>
               <div className="row">
                 <div className="fact-counter">
-                  <div className="col-lg-3 col-sm-3 col-xs-6">
+                  {/* <div className="col-lg-3 col-sm-3 col-xs-6">
                     <div
                       className="count color-dark wow fadeIn"
                       data-wow-delay="300ms"
@@ -55,11 +56,11 @@ const Nosotros = () => {
                         data-speed="3000"
                         data-stop="230"
                       >
-                        230
+                        10
                       </div>
-                      <span>Employees</span>
+                      <span>Empleados</span>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="col-lg-3 col-sm-3 col-xs-6">
                     <div
                       className="count color-dark wow fadeIn"
@@ -72,9 +73,9 @@ const Nosotros = () => {
                         data-speed="3000"
                         data-stop="141"
                       >
-                        141
+                        +100
                       </div>
-                      <span>Satisfied Clients</span>
+                      <span>Clientes Satisfechos</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -89,9 +90,9 @@ const Nosotros = () => {
                         data-speed="3000"
                         data-stop="172"
                       >
-                        172
+                        +100
                       </div>
-                      <span>Projects Done</span>
+                      <span>Green Houses</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -106,9 +107,9 @@ const Nosotros = () => {
                         data-speed="3000"
                         data-stop="2347"
                       >
-                        2347
+                        +20
                       </div>
-                      <span>Days Experience</span>
+                      <span>Años de Experiencia</span>
                     </div>
                   </div>
                 </div>
@@ -127,7 +128,7 @@ const Nosotros = () => {
               <div className="dark-gradient about-link">
                 <img src="images/our_service/1.png" alt="" />
                 <div className="overlay">
-                  <h5 className="inner-title">Tree Plantation</h5>
+                  <h5 className="inner-title">Servicio 1</h5>
                   <a href="#" className="btn-link">
                     Read More
                   </a>
@@ -147,7 +148,7 @@ const Nosotros = () => {
             </div>
             <div className="col-md-4 col-sm-4">
               <div className="dark-gradient about-link">
-                <img src="images/our_service/9.png" alt="" />
+                <img src="images/our_service/9.png" alt="big" />
                 <div className="overlay">
                   <h5 className="inner-title">Agricultural Research</h5>
                   <a href="#" className="btn-link">
