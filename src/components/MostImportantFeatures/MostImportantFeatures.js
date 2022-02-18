@@ -46,6 +46,8 @@ const MostImportantFeatures = () => {
                     .subtitulo
                 }
               </span>
+
+              {/* ICONS AND TEXT */}
               <ul className="feature">
                 <li>
                   <span
@@ -53,16 +55,20 @@ const MostImportantFeatures = () => {
                     data-wow-delay="500ms"
                     data-wow-duration="1000ms"
                   >
-                    <i className="color-default flat-icon flaticon-wallet">
-                      ssssss
-                    </i>
+                    <i className="color-default flat-icon flaticon-wallet"></i>
                   </span>
                   <div className="feature-item">
-                    <h4>Reasonable Price</h4>
+                    <h4>
+                      {
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .encabezado
+                      }
+                    </h4>
                     <p>
-                      Quam. Lectus dis. Inceptos curabitur non enim facilisi
-                      dolor dis tempus eu vehicula eu condimentum, tortor
-                      rhoncus ut malesuada habitasse hendrerit curae.
+                      {
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .subtitulo
+                      }
                     </p>
                   </div>
                 </li>
@@ -72,14 +78,28 @@ const MostImportantFeatures = () => {
                     data-wow-delay="600ms"
                     data-wow-duration="1000ms"
                   >
-                    <i className="color-default flat-icon flaticon-consulting-message"></i>
+                    <img
+                      src={
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .iconServiciosDestacados.url
+                      }
+                      width="200"
+                      height="70"
+                    />
                   </span>
                   <div className="feature-item">
-                    <h4>Free Consultation</h4>
+                    <h4>
+                      {" "}
+                      {
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .encabezado
+                      }
+                    </h4>
                     <p>
-                      Quam. Lectus dis. Inceptos curabitur non enim facilisi
-                      dolor dis tempus eu vehicula eu condimentum, tortor
-                      rhoncus ut malesuada habitasse hendrerit curae.
+                      {
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .subtitulo
+                      }
                     </p>
                   </div>
                 </li>
@@ -92,11 +112,17 @@ const MostImportantFeatures = () => {
                     <i className="color-default flat-icon flaticon-guarantee"></i>
                   </span>
                   <div className="feature-item">
-                    <h4>Garanteed Works</h4>
+                    <h4>
+                      {
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .encabezado
+                      }
+                    </h4>
                     <p>
-                      Quam. Lectus dis. Inceptos curabitur non enim facilisi
-                      dolor dis tempus eu vehicula eu condimentum, tortor
-                      rhoncus ut malesuada habitasse hendrerit curae.
+                      {
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .subtitulo
+                      }
                     </p>
                   </div>
                 </li>
@@ -106,48 +132,28 @@ const MostImportantFeatures = () => {
                     data-wow-delay="800ms"
                     data-wow-duration="1000ms"
                   >
-                    <i className="color-default flat-icon flaticon-medal"></i>
+                    <img
+                      src={
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .iconServiciosDestacados.url
+                      }
+                      width="200"
+                      height="70"
+                    />
                   </span>
                   <div className="feature-item">
-                    <h4>Certified Architecture</h4>
+                    <h4>
+                      {" "}
+                      {
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .encabezado
+                      }
+                    </h4>
                     <p>
-                      Quam. Lectus dis. Inceptos curabitur non enim facilisi
-                      dolor dis tempus eu vehicula eu condimentum, tortor
-                      rhoncus ut malesuada habitasse hendrerit curae.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <span
-                    className="wow bounceIn"
-                    data-wow-delay="900ms"
-                    data-wow-duration="1000ms"
-                  >
-                    <i className="color-default flat-icon flaticon-customer-service"></i>
-                  </span>
-                  <div className="feature-item">
-                    <h4>24/7 Support</h4>
-                    <p>
-                      Quam. Lectus dis. Inceptos curabitur non enim facilisi
-                      dolor dis tempus eu vehicula eu condimentum, tortor
-                      rhoncus ut malesuada habitasse hendrerit curae.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <span
-                    className="wow bounceIn"
-                    data-wow-delay="1000ms"
-                    data-wow-duration="1000ms"
-                  >
-                    <i className="color-default flat-icon flaticon-cup"></i>
-                  </span>
-                  <div className="feature-item">
-                    <h4>Awards Winner</h4>
-                    <p>
-                      Quam. Lectus dis. Inceptos curabitur non enim facilisi
-                      dolor dis tempus eu vehicula eu condimentum, tortor
-                      rhoncus ut malesuada habitasse hendrerit curae.
+                      {
+                        result.data.serviciosDestacadosPConnection.edges[4].node
+                          .subtitulo
+                      }
                     </p>
                   </div>
                 </li>
@@ -157,40 +163,62 @@ const MostImportantFeatures = () => {
               <div className="row">
                 <div className="col-md-12 col-sm-6">
                   <div className="before-muddy margin-bottom-30">
-                    <img src="images/banner/3.png" alt="" />
+                    <img
+                      src={
+                        result.data.serviciosDestacadosPConnection.edges[8].node
+                          .iconServiciosDestacados.url
+                      }
+                      alt="ssssssss"
+                    />
                     <div className="overlay img-box">
                       <span className="icon-border">
                         <i className="color-white flaticon-business-1"></i>
                       </span>
                       <h4 className="inner-title color-white">
-                        Invernaderos Disponibles en Mercado Libre
+                        {
+                          result.data.serviciosDestacadosPConnection.edges[8]
+                            .node.encabezado
+                        }
                       </h4>
                       <p>
-                        Inceptos ante libero eget fringilla arcu. Rutrum
-                        interdum nostra fermentum posuere.
+                        {
+                          result.data.serviciosDestacadosPConnection.edges[8]
+                            .node.subtitulo
+                        }
                       </p>
                       <a href="#" className="btn btn-default">
-                        Read More
+                        Leer más
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-12 col-sm-6">
                   <div className="before-muddy margin-bottom-30">
-                    <img src="" alt="dddddddddddddddd" />
+                    <img
+                      src={
+                        result.data.serviciosDestacadosPConnection.edges[9].node
+                          .iconServiciosDestacados.url
+                      }
+                      alt="dddddddddddddddd"
+                    />
                     <div className="overlay img-box">
                       <span className="icon-border">
                         <i className="color-white flaticon-wallet"></i>
                       </span>
                       <h4 className="inner-title color-white">
-                        Calcluter Cost
+                        {
+                          result.data.serviciosDestacadosPConnection.edges[9]
+                            .node.encabezado
+                        }
                       </h4>
-                      <p>
-                        Inceptos ante libero eget fringilla arcu. Rutrum
-                        interdum nostra fermentum posuere.
-                      </p>
+                      {/* <p>
+                        {
+                          result.data.serviciosDestacadosPConnection.edges[9]
+                            .node.subtitulo
+                        }
+                      </p> */}
                       <a href="#" className="btn btn-default">
-                        Calcluter
+                        Ver más
                       </a>
                     </div>
                   </div>
