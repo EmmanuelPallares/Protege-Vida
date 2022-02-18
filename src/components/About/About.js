@@ -4,10 +4,17 @@ import { gql, useQuery } from "urql";
 
 const AboutText = gql`
   {
-    abouts {
-      tituloPrincipal
-      subtituloAbout
-      subtituloAbout2
+    nosotrossConnection {
+      edges {
+        node {
+          tituloPrincipal
+          subtituloAbout
+          subtituloAbout2
+          imagenAbout1 {
+            url
+          }
+        }
+      }
     }
   }
 `;
@@ -19,7 +26,7 @@ const Nosotros = () => {
 
   if (fetching) return <p>Fetching products</p>;
   if (error) return <p>Oh no... {error.message}</p>;
-  console.log(result.data.abouts[0]);
+
   return (
     <div className="margin-top-100">
       <section className="full-row about-company">
@@ -32,14 +39,21 @@ const Nosotros = () => {
                 data-wow-duration="700ms"
               >
                 <h2 className="title">
-                  <span>Bienvenido a </span>
-                  {result.data.abouts[0].tituloPrincipal}
+                  <span>Bienvenido </span>{" "}
+                  {
+                    result.data.nosotrossConnection.edges[0].node
+                      .tituloPrincipal
+                  }
                 </h2>
                 <span className="sub-title">
-                  {result.data.abouts[0].subtituloAbout}
+                  {" "}
+                  {result.data.nosotrossConnection.edges[0].node.subtituloAbout}
                 </span>
                 <div className="text-area">
-                  <p>{result.data.abouts[0].subtituloAbout2}</p>
+                  {
+                    result.data.nosotrossConnection.edges[0].node
+                      .subtituloAbout2
+                  }
                 </div>
               </div>
               <div className="row">
@@ -118,7 +132,9 @@ const Nosotros = () => {
             <div className="col-md-4">
               <img
                 className="none-mobile"
-                src="images/banner/welcome.png"
+                src={
+                  result.data.nosotrossConnection.edges[0].node.imagenAbout1.url
+                }
                 alt=""
               />
             </div>
@@ -126,7 +142,13 @@ const Nosotros = () => {
           <div className="row">
             <div className="col-md-4 col-sm-4">
               <div className="dark-gradient about-link">
-                <img src="images/our_service/1.png" alt="" />
+                <img
+                  src={
+                    result.data.nosotrossConnection.edges[0].node.imagenAbout1
+                      .url
+                  }
+                  alt=""
+                />
                 <div className="overlay">
                   <h5 className="inner-title">Servicio 1</h5>
                   <a href="#" className="btn-link">
@@ -137,7 +159,13 @@ const Nosotros = () => {
             </div>
             <div className="col-md-4 col-sm-4">
               <div className="dark-gradient about-link">
-                <img src="images/our_service/5.png" alt="" />
+                <img
+                  src={
+                    result.data.nosotrossConnection.edges[0].node.imagenAbout1
+                      .url
+                  }
+                  alt=""
+                />
                 <div className="overlay">
                   <h5 className="inner-title">Our Social Events</h5>
                   <a href="#" className="btn-link">
@@ -148,7 +176,13 @@ const Nosotros = () => {
             </div>
             <div className="col-md-4 col-sm-4">
               <div className="dark-gradient about-link">
-                <img src="images/our_service/9.png" alt="big" />
+                <img
+                  src={
+                    result.data.nosotrossConnection.edges[0].node.imagenAbout1
+                      .url
+                  }
+                  alt="big"
+                />
                 <div className="overlay">
                   <h5 className="inner-title">Agricultural Research</h5>
                   <a href="#" className="btn-link">
