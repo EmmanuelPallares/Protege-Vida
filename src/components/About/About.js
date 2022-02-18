@@ -13,6 +13,9 @@ const AboutText = gql`
           imagenAbout1 {
             url
           }
+          soloImagen {
+            url
+          }
         }
       }
     }
@@ -133,26 +136,33 @@ const Nosotros = () => {
               <img
                 className="none-mobile"
                 src={
-                  result.data.nosotrossConnection.edges[0].node.imagenAbout1.url
+                  result.data.nosotrossConnection.edges[5].node.soloImagen.url
                 }
                 alt=""
               />
             </div>
           </div>
+
+          {/* ICONOS DIVIDER */}
           <div className="row">
             <div className="col-md-4 col-sm-4">
               <div className="dark-gradient about-link">
                 <img
                   src={
-                    result.data.nosotrossConnection.edges[0].node.imagenAbout1
-                      .url
+                    result.data.nosotrossConnection.edges[3].node.soloImagen.url
                   }
                   alt=""
                 />
                 <div className="overlay">
-                  <h5 className="inner-title">Servicio 1</h5>
+                  <h5 className="inner-title">
+                    {" "}
+                    {
+                      result.data.nosotrossConnection.edges[4].node
+                        .tituloPrincipal
+                    }
+                  </h5>
                   <a href="#" className="btn-link">
-                    Read More
+                    Leer más
                   </a>
                 </div>
               </div>
@@ -161,15 +171,19 @@ const Nosotros = () => {
               <div className="dark-gradient about-link">
                 <img
                   src={
-                    result.data.nosotrossConnection.edges[0].node.imagenAbout1
-                      .url
+                    result.data.nosotrossConnection.edges[2].node.soloImagen.url
                   }
-                  alt=""
+                  alt="sdscsf"
                 />
                 <div className="overlay">
-                  <h5 className="inner-title">Our Social Events</h5>
+                  <h5 className="inner-title">
+                    {
+                      result.data.nosotrossConnection.edges[2].node
+                        .tituloPrincipal
+                    }
+                  </h5>
                   <a href="#" className="btn-link">
-                    Read More
+                    Leer más
                   </a>
                 </div>
               </div>
@@ -178,15 +192,19 @@ const Nosotros = () => {
               <div className="dark-gradient about-link">
                 <img
                   src={
-                    result.data.nosotrossConnection.edges[0].node.imagenAbout1
-                      .url
+                    result.data.nosotrossConnection.edges[3].node.soloImagen.url
                   }
                   alt="big"
                 />
                 <div className="overlay">
-                  <h5 className="inner-title">Agricultural Research</h5>
+                  <h5 className="inner-title">
+                    {
+                      result.data.nosotrossConnection.edges[3].node
+                        .tituloPrincipal
+                    }
+                  </h5>
                   <a href="#" className="btn-link">
-                    Read More
+                    Saber más
                   </a>
                 </div>
               </div>
