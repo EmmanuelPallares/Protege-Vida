@@ -6,16 +6,18 @@ import Ourservices from "./components/Ourservices/Ourservices";
 import Choose from "./components/Choose/Choose";
 import MostImportantFeatures from "./components/MostImportantFeatures/MostImportantFeatures";
 import Footer from "./components/Footer/Footer";
+import HelpingFeatures from "./components/HelpingFeatures/HelpingFeatures";
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Router>
-        <Navbar />
         <About />
         <MostImportantFeatures />
         <Ourservices />
         <Choose />
+        <HelpingFeatures />
         <Footer />
       </Router>
     </div>
