@@ -1,97 +1,32 @@
 import React from "react";
 import "./Navbar.css";
+import TopBar from "./TopBar/TopBar";
+import ContactBar from "./ContactBar/ContactBar";
+import { gql, useQuery } from "urql";
+const navegacionsConnection = gql`
+  {
+    navegacionsConnection {
+      edges {
+        node {
+          elemento
+          slugCategorias
+        }
+      }
+    }
+  }
+`;
 const Navbar = () => {
+  const [result] = useQuery({ query: navegacionsConnection });
+
+  const { data, fetching, error } = result;
+
+  if (fetching) return <p>Fetching products</p>;
+  if (error) return <p>Oh no... {error.message}</p>;
   return (
     <>
       <header id="header" className="nav-style-4 four nav-on-top">
-        <div className="bg-default top-header">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6 col-sm-6">
-                <ul className="top-info-left">
-                  <li>Bienvenido a ProtegeVida</li>
-                </ul>
-              </div>
-              <div className="col-md-6 col-sm-6">
-                <div className="top-info-right">
-                  <div className="soc-icon pull-right">
-                    <a href="#">
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="fa fa-linkedin"></i>{" "}
-                    </a>
-                  </div>
-                  <ul className="user-nav pull-right">
-                    <li className="dropdown">
-                      <a
-                        className="user-toggle"
-                        data-toggle="dropdown"
-                        href="#"
-                      >
-                        Redes Sociales
-                      </a>
-                      {/* <ul className="cart-dropdown account">
-                         <li>
-                          <a href="#">Sign in</a>
-                        </li>
-                        <li>
-                          <a href="#">Join us</a>
-                        </li> 
-                      </ul> */}
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="middle-header padding-15 bg-white">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-3 col-sm-3 col-xs-6">
-                <div className="navbar-header">
-                  <a className="navbar-brand" href="index.html">
-                    <img
-                      className="nav-logo"
-                      src="images/logo/logo3.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col-md-9 col-sm-9 col-xs-6">
-                <div className="contact-info">
-                  <div className="middle_header_icon color-default">
-                    <i className="flaticon-customer-service"></i>
-                  </div>
-                  <div className="contact-number">
-                    <div>( +1 ) 507-465-6522</div>
-                    <span>www.unigreen@info.com</span>
-                  </div>
-                </div>
-                <div className="contact-location">
-                  <div className="middle_header_icon color-default">
-                    <i className="flaticon-check-in-marker"></i>
-                  </div>
-                  <div className="contact-number">
-                    <div>3112 Roy Alley Denver 80216</div>
-                    <span>Newyourk, USA</span>
-                  </div>
-                </div>
-                <div className="btn-quote">
-                  <a className="btn btn-primary" href="#">
-                    Get a Quote
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <TopBar />
+        <ContactBar />
         <div className="bg-dark">
           <div className="container">
             <nav className="navbar navbar-default">
@@ -103,7 +38,7 @@ const Navbar = () => {
                   data-target="#bs-example-navbar-collapse-1"
                   aria-expanded="false"
                 >
-                  <span className="sr-only">Toggle navigation</span>
+                  <span className="sr-only">Navegación</span>
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
@@ -125,21 +60,30 @@ const Navbar = () => {
                       data-toggle="dropdown"
                       href="#"
                     >
-                      Inicio
+                      {result.data.navegacionsConnection.edges[0].node.elemento}
+                    </a>
+                  </li>
+                  <li className="dropdown">
+                    <a
+                      className="dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#"
+                    >
+                      {result.data.navegacionsConnection.edges[1].node.elemento}
                       <i className="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="index.html">Home Page 1</a>
+                        <a href="projects-full.html">Bio-Green---1</a>
                       </li>
                       <li>
-                        <a href="index_2.html">Home Page 2</a>
+                        <a href="projects-box.html">Bio-Green---2</a>
                       </li>
                       <li>
-                        <a href="index_3.html">Home Page 3</a>
+                        <a href="projects-classNameic.html">Bio-Green---3</a>
                       </li>
-                      <li className="first">
-                        <a href="index_4.html">Home Page 4</a>
+                      <li>
+                        <a href="single-project.html">Bio-Green---4</a>
                       </li>
                     </ul>
                   </li>
@@ -149,23 +93,21 @@ const Navbar = () => {
                       data-toggle="dropdown"
                       href="#"
                     >
-                      Proyectos
+                      {result.data.navegacionsConnection.edges[2].node.elemento}
                       <i className="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="projects-full.html">Projects Full Width</a>
+                        <a href="tree-plantation.html">Comercial-Green---1</a>
                       </li>
                       <li>
-                        <a href="projects-box.html">Projects Box Width</a>
+                        <a href="garden-care.html">Comercial-Green---2</a>
                       </li>
                       <li>
-                        <a href="projects-classNameic.html">
-                          Projects ClassNameic
-                        </a>
+                        <a href="watering-garden.html">Comercial-Green---3</a>
                       </li>
                       <li>
-                        <a href="single-project.html">Single Project</a>
+                        <a href="watering-garden.html">Comercial-Green---4</a>
                       </li>
                     </ul>
                   </li>
@@ -175,63 +117,33 @@ const Navbar = () => {
                       data-toggle="dropdown"
                       href="#"
                     >
-                      Servicios
+                      {result.data.navegacionsConnection.edges[3].node.elemento}
                       <i className="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="tree-plantation.html">Tree Planting</a>
+                        <a href="shop-single.html">Malla Sombra</a>
                       </li>
                       <li>
-                        <a href="garden-care.html">Garden Care</a>
+                        <a href="shop-single.html">Plástico</a>
                       </li>
                       <li>
-                        <a href="watering-garden.html">Watering Garden</a>
+                        <a href="shop-single.html">Semillas</a>
                       </li>
                       <li>
-                        <a href="garden-design.html">Garden Design</a>
-                      </li>
-                      <li>
-                        <a href="gutter-repair.html">Gutter Repair</a>
-                      </li>
-                      <li>
-                        <a href="lawn-care.html">Lawn Care</a>
-                      </li>
-                      <li>
-                        <a href="land-design.html">Land Design</a>
-                      </li>
-                      <li>
-                        <a href="agricultural-research.html">
-                          Agricultural Research
-                        </a>
+                        <a href="shop-single.html">Ferti-Riego</a>
                       </li>
                     </ul>
                   </li>
-                  <li className="dropdown">
+
+                  {/* <div>
+                     <li className="dropdown">
                     <a
                       className="dropdown-toggle"
                       data-toggle="dropdown"
                       href="#"
                     >
-                      Insumos
-                      <i className="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a href="shop.html">Shop</a>
-                      </li>
-                      <li>
-                        <a href="shop-single.html">Shop Single</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="dropdown">
-                    <a
-                      className="dropdown-toggle"
-                      data-toggle="dropdown"
-                      href="#"
-                    >
-                      Urbano
+                      Sub-Menús-Demo
                       <i className="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
                     <ul className="dropdown-menu">
@@ -241,7 +153,6 @@ const Navbar = () => {
                           data-toggle="dropdown"
                           href="#"
                         >
-                          Comercial
                           <i
                             className="fa fa-angle-right"
                             aria-hidden="true"
@@ -338,31 +249,33 @@ const Navbar = () => {
                         <a href="error.html">404 Page</a>
                       </li>
                     </ul>
-                  </li>
+                  </li> 
+                  </div> */}
+
                   <li className="dropdown">
                     <a
                       className="dropdown-toggle"
                       data-toggle="dropdown"
                       href="#"
                     >
-                      Blog{" "}
+                      {result.data.navegacionsConnection.edges[4].node.elemento}
                       <i className="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="blog.html">Blog List</a>
+                        <a href="blog.html">Hidroponia</a>
                       </li>
                       <li>
-                        <a href="blog-detail.html">Single Blog</a>
+                        <a href="blog-detail.html">Agricultura Protegida</a>
                       </li>
                     </ul>
                   </li>
                   <li>
                     <a href="contact.html">Contacto</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="cart.html">Cart</a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="myaccount.html">My Account</a>
                   </li>

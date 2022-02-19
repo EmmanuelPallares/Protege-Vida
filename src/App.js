@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Link } from "react-router-dom";
+import * as React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Navbar from "./components/NavBar/Navbar";
 import About from "./components/About/About";
@@ -8,19 +9,26 @@ import MostImportantFeatures from "./components/MostImportantFeatures/MostImport
 import Footer from "./components/Footer/Footer";
 import HelpingFeatures from "./components/HelpingFeatures/HelpingFeatures";
 
+function Inicio() {
+  return (
+    <>
+      {/* <Navbar /> */}
+      <About />
+      <MostImportantFeatures />
+      <Ourservices />
+      <Choose />
+      <HelpingFeatures />
+      <Footer />
+    </>
+  );
+}
+
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Router>
-        <About />
-        <MostImportantFeatures />
-        <Ourservices />
-        <Choose />
-        <HelpingFeatures />
-        <Footer />
-      </Router>
-    </div>
+    <Routes>
+      <Route path="/" element={<Inicio />} />
+      <Route path="/About" element={<About />} />
+    </Routes>
   );
 }
 

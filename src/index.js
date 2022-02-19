@@ -1,5 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import Navbar from "./components/NavBar/Navbar";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import "../src/css/bootstrap.css";
@@ -22,10 +24,11 @@ const client = createClient({
 });
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <Provider value={client}>
+      <Navbar />
       <App />
     </Provider>
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
