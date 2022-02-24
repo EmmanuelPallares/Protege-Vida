@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import TopBar from "./TopBar/TopBar";
 import ContactBar from "./ContactBar/ContactBar";
@@ -53,71 +54,77 @@ const Navbar = () => {
                 class="collapse navbar-collapse"
                 id="bs-example-navbar-collapse-1"
               >
+                {/* Inicio */}
                 <ul class="navigation nav navbar-nav navbar-left">
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                       {result.data.navegacionsConnection.edges[0].node.elemento}
                     </a>
                   </li>
+
+                  {/* Productos*/}
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <Link class="dropdown-toggle" data-toggle="dropdown" to="/">
                       {result.data.navegacionsConnection.edges[1].node.elemento}
                       <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
+                    </Link>
                     <ul class="dropdown-menu">
                       <li>
-                        <a href="projects-full.html">Bio-Green---1</a>
+                        <Link to="/">Huertos</Link>
                       </li>
                       <li>
-                        <a href="projects-box.html">Bio-Green---2</a>
+                        <a href="projects-box.html">Plagas</a>
                       </li>
                       <li>
-                        <a href="projects-classic.html">Bio-Green---3</a>
+                        <a href="projects-classic.html">Riego Insumos</a>
                       </li>
                       <li>
-                        <a href="single-project.html">Bio-Green---4</a>
+                        <a href="single-project.html">Fertilizantes</a>
+                      </li>
+                      <li>
+                        <a href="single-project.html">Cultivo</a>
+                      </li>
+                      <li>
+                        <a href="single-project.html">Biogreen</a>
+                      </li>
+                      <li>
+                        <a href="single-project.html">
+                          Invernaderos Mediana Escala
+                        </a>
+                      </li>
+                      <li>
+                        <a href="single-project.html">
+                          Invernaderos Escala Comercial
+                        </a>
+                      </li>
+                      <li>
+                        <a href="single-project.html">
+                          Accesorios para invernadero
+                        </a>
                       </li>
                     </ul>
                   </li>
+
+                  {/* Como Comprar */}
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <Link
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      to="como-comprar"
+                    >
                       {result.data.navegacionsConnection.edges[2].node.elemento}
-                      <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a href="tree-plantation.html">Comercial-Green---1</a>
-                      </li>
-                      <li>
-                        <a href="garden-care.html">Comercial-Green---2</a>
-                      </li>
-                      <li>
-                        <a href="watering-garden.html">Comercial-Green---3</a>
-                      </li>
-                      <li>
-                        <a href="watering-garden.html">Comercial-Green---4</a>
-                      </li>
-                    </ul>
+                    </Link>
                   </li>
+
+                  {/* Blog */}
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <Link
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      to="blog"
+                    >
                       {result.data.navegacionsConnection.edges[3].node.elemento}
-                      <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a href="shop-single.html">Malla Sombra</a>
-                      </li>
-                      <li>
-                        <a href="shop-single.html">Plástico</a>
-                      </li>
-                      <li>
-                        <a href="shop-single.html">Semillas</a>
-                      </li>
-                      <li>
-                        <a href="shop-single.html">Ferti-Riego</a>
-                      </li>
-                    </ul>
+                    </Link>
                   </li>
 
                   {/* <div>
@@ -236,29 +243,21 @@ const Navbar = () => {
                   </li> 
                   </div> */}
 
+                  {/* Contacto */}
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <Link
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      to="contacto"
+                    >
                       {result.data.navegacionsConnection.edges[4].node.elemento}
-                      <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a href="blog.html">Hidroponia</a>
-                      </li>
-                      <li>
-                        <a href="blog-detail.html">Agricultura Protegida</a>
-                      </li>
-                    </ul>
+                    </Link>
                   </li>
-                  <li>
-                    <a href="contact.html">Contacto</a>
-                  </li>
+                  <li>{/* <a href="contact.html">Contacto</a> */}</li>
                   {/* <li>
                     <a href="cart.html">Cart</a>
                   </li> */}
-                  <li>
-                    <a href="myaccount.html">My Account</a>
-                  </li>
+                  <li>{/* <a href="myaccount.html">My Account</a> */}</li>
                 </ul>
               </div>
             </nav>
