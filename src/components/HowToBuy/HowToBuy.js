@@ -13,7 +13,7 @@ const HowToBuy = () => {
               </h4>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-12 box-right-middle">
-              <Link to="/metodos-de-pago">
+              <Link to="como-comprar">
                 <a class="btn btn-large">Proceso de Compra</a>
               </Link>
             </div>

@@ -57,9 +57,9 @@ const Navbar = () => {
                 {/* Inicio */}
                 <ul class="navigation nav navbar-nav navbar-left">
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <Link class="dropdown-toggle" data-toggle="dropdown" to="/">
                       {result.data.navegacionsConnection.edges[0].node.elemento}
-                    </a>
+                    </Link>
                   </li>
 
                   {/* Productos*/}

@@ -13,6 +13,8 @@ import Services from "./components/Services/Services";
 import HowToBuy from "./components/HowToBuy/HowToBuy";
 import Contacto from "./pages/contacto/Contacto";
 import ComoComprar from "./pages/ComoComprar/ComoComprar";
+import Blog from "./pages/blog/blog";
+import LastProjects from "./components/LastProjects/LastProjects";
 
 function Inicio() {
   return (
@@ -25,6 +27,7 @@ function Inicio() {
       <Ourservices /> */}
       {/* <Choose /> */}
       <HelpingFeatures />
+      {/* <LastProjects /> */}
       <HowToBuy />
       <Footer />
     </>
@@ -37,6 +40,7 @@ function App() {
       <Route path="/" element={<Inicio />} />
       <Route path="/contacto" element={<Contacto />} />
       <Route path="/como-comprar" element={<ComoComprar />} />
+      <Route path="/blog" element={<Blog />} />
     </Routes>
   );
 }

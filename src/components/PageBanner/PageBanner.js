@@ -5,7 +5,7 @@ const PageBanner = (props) => {
   return (
     <div>
       <div id="banner">
-        <div class="container">
+        <div class="container padding-80">
           <div class="row padding-80">
             <div class="col-md-6 col-sm-6">
               <h2 class="page-title">{props.name}</h2>

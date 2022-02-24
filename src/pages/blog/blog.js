@@ -1,12 +1,12 @@
 import React from "react";
 import PageBanner from "../../components/PageBanner/PageBanner";
 
-const ProcesoCompra = () => {
+const Blog = () => {
   return (
     <section>
-      <PageBanner name="Como Comprar" inicio="Inicio" />
+      <PageBanner name="Blog" inicio="Inicio" />
     </section>
   );
 };
 
-export default ProcesoCompra;
+export default Blog;
