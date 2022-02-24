@@ -3,7 +3,6 @@ import React from "react";
 const MisionVision = () => {
   return (
     <>
-      {" "}
       <section class="full-row padding-50">
         <div class="container">
           <div class="row">

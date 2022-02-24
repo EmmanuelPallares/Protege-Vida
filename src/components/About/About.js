@@ -61,7 +61,7 @@ const Nosotros = () => {
               </div>
               <div className="row">
                 <div className="fact-counter">
-                  {/* <div className="col-lg-3 col-sm-3 col-xs-6">
+                  <div className="col-lg-3 col-sm-3 col-xs-6">
                     <div
                       className="count color-dark wow fadeIn"
                       data-wow-delay="300ms"
@@ -75,9 +75,9 @@ const Nosotros = () => {
                       >
                         10
                       </div>
-                      <span>Empleados</span>
+                      <span>Años de Experiencia</span>
                     </div>
-                  </div> */}
+                  </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
                     <div
                       className="count color-dark wow fadeIn"
@@ -90,9 +90,9 @@ const Nosotros = () => {
                         data-speed="3000"
                         data-stop="141"
                       >
-                        +100
+                        +50
                       </div>
-                      <span>Clientes Satisfechos</span>
+                      <span>Productos Quultiva</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -107,9 +107,9 @@ const Nosotros = () => {
                         data-speed="3000"
                         data-stop="172"
                       >
-                        +100
+                        +10
                       </div>
-                      <span>Green Houses</span>
+                      <span>Diseños Originales</span>
                     </div>
                   </div>
                   <div className="col-lg-3 col-sm-3 col-xs-6">
@@ -126,7 +126,9 @@ const Nosotros = () => {
                       >
                         +20
                       </div>
-                      <span>Años de Experiencia</span>
+                      <span>
+                        Proveedores que garantizan suministro de productos
+                      </span>
                     </div>
                   </div>
                 </div>
