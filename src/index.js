@@ -16,7 +16,6 @@ import "../src/css/owl.css";
 import "../src/css/responsive.css";
 import "../src/css/settings.css";
 import "../src/css/style.css";
-import { CustomPreloader } from "react-preloaders";
 import Preloader from "./components/Preloader/Preloader";
 import { createClient, Provider } from "urql";
 

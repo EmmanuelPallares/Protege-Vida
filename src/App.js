@@ -11,6 +11,8 @@ import HelpingFeatures from "./components/HelpingFeatures/HelpingFeatures";
 import MisionVision from "./components/MisionVision/MisionVision";
 import Services from "./components/Services/Services";
 import HowToBuy from "./components/HowToBuy/HowToBuy";
+import Contacto from "./pages/contacto/Contacto";
+import ComoComprar from "./pages/ComoComprar/ComoComprar";
 
 function Inicio() {
   return (
@@ -33,7 +35,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Inicio />} />
-      <Route path="/About" element={<About />} />
+      <Route path="/contacto" element={<Contacto />} />
+      <Route path="/como-comprar" element={<ComoComprar />} />
     </Routes>
   );
 }

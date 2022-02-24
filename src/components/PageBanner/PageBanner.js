@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const PageBanner = (props) => {
-  console.log(props);
   return (
     <div>
       <div id="banner">
