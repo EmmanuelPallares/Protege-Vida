@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom";
 import Navbar from "./components/NavBar/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+
 import "../src/css/bootstrap.css";
 import "../src/css/color.css";
 import "../src/css/animate.min.css";

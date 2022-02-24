@@ -1,21 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import { gql, useQuery } from "urql";
-import $ from "jquery";
 
-$(document).ready(function () {
-  var dynamicDelay = [1500, 1000, 1200];
-  var fallbackValue = "500ms";
-
-  $(".service-item.wow").each(function (index) {
-    $(this).attr(
-      "data-wow-delay",
-      typeof dynamicDelay[index] === "undefined"
-        ? fallbackValue
-        : dynamicDelay[index] + "ms"
-    );
-  });
-});
 const AboutText = gql`
   {
     nosotrossConnection {

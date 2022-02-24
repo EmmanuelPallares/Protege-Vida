@@ -11,7 +11,7 @@ const HelpingFeatures = () => {
               <div
                 class="bg-white help-info wow zoomIn"
                 data-wow-delay="300ms"
-                data-wow-duration="700ms"
+                data-wow-duration="100ms"
               >
                 <span>
                   <i class="flaticon-business-1"></i>

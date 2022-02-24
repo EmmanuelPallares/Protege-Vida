@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/NavBar/Navbar";
 import About from "./components/About/About";
+import AboutClass from "./components/AboutClass/About";
 import Ourservices from "./components/Ourservices/Ourservices";
 import Choose from "./components/Choose/Choose";
 import MostImportantFeatures from "./components/MostImportantFeatures/MostImportantFeatures";
@@ -21,6 +22,7 @@ function Inicio() {
     <>
       <Navbar />
       <About />
+      <AboutClass />
       <MisionVision />
       <Services />
       {/* <MostImportantFeatures />
