@@ -8,12 +8,14 @@ import Choose from "./components/Choose/Choose";
 import MostImportantFeatures from "./components/MostImportantFeatures/MostImportantFeatures";
 import Footer from "./components/Footer/Footer";
 import HelpingFeatures from "./components/HelpingFeatures/HelpingFeatures";
+import MisionVision from "./components/MisionVision/MisionVision";
 
 function Inicio() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <About />
+      <MisionVision />
       <MostImportantFeatures />
       <Ourservices />
       <Choose />

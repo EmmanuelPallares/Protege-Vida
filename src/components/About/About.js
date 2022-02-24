@@ -149,7 +149,7 @@ const Nosotros = () => {
               <div className="dark-gradient about-link">
                 <img
                   src={
-                    result.data.nosotrossConnection.edges[3].node.soloImagen.url
+                    result.data.nosotrossConnection.edges[4].node.soloImagen.url
                   }
                   alt=""
                 />
