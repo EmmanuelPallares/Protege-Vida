@@ -24,55 +24,47 @@ const Navbar = () => {
   if (error) return <p>Oh no... {error.message}</p>;
   return (
     <>
-      <header id="header" className="nav-style-4 four nav-on-top">
+      <header id="header" class="nav-style-4 four nav-on-top">
         <TopBar />
         <ContactBar />
-        <div className="bg-dark">
-          <div className="container">
-            <nav className="navbar navbar-default">
-              <div className="navbar-header">
+        <div class="bg-dark">
+          <div class="container">
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
                 <button
                   type="button"
-                  className="navbar-toggle collapsed"
+                  class="navbar-toggle collapsed"
                   data-toggle="collapse"
                   data-target="#bs-example-navbar-collapse-1"
                   aria-expanded="false"
                 >
-                  <span className="sr-only">Navegación</span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
+                  <span class="sr-only">Navegación</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
                 </button>
 
-                <a className="navbar-brand visible991" href="index.html">
+                <a class="navbar-brand visible991" href="index.html">
                   <img src="images/logo/logo.png" alt="" />
                 </a>
               </div>
 
               <div
-                className="collapse navbar-collapse"
+                class="collapse navbar-collapse"
                 id="bs-example-navbar-collapse-1"
               >
-                <ul className="navigation nav navbar-nav navbar-left">
-                  <li className="dropdown">
-                    <a
-                      className="dropdown-toggle"
-                      data-toggle="dropdown"
-                      href="#"
-                    >
+                <ul class="navigation nav navbar-nav navbar-left">
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                       {result.data.navegacionsConnection.edges[0].node.elemento}
                     </a>
                   </li>
-                  <li className="dropdown">
-                    <a
-                      className="dropdown-toggle"
-                      data-toggle="dropdown"
-                      href="#"
-                    >
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                       {result.data.navegacionsConnection.edges[1].node.elemento}
-                      <i className="fa fa-angle-right" aria-hidden="true"></i>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
-                    <ul className="dropdown-menu">
+                    <ul class="dropdown-menu">
                       <li>
                         <a href="projects-full.html">Bio-Green---1</a>
                       </li>
@@ -80,23 +72,19 @@ const Navbar = () => {
                         <a href="projects-box.html">Bio-Green---2</a>
                       </li>
                       <li>
-                        <a href="projects-classNameic.html">Bio-Green---3</a>
+                        <a href="projects-classic.html">Bio-Green---3</a>
                       </li>
                       <li>
                         <a href="single-project.html">Bio-Green---4</a>
                       </li>
                     </ul>
                   </li>
-                  <li className="dropdown">
-                    <a
-                      className="dropdown-toggle"
-                      data-toggle="dropdown"
-                      href="#"
-                    >
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                       {result.data.navegacionsConnection.edges[2].node.elemento}
-                      <i className="fa fa-angle-right" aria-hidden="true"></i>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
-                    <ul className="dropdown-menu">
+                    <ul class="dropdown-menu">
                       <li>
                         <a href="tree-plantation.html">Comercial-Green---1</a>
                       </li>
@@ -111,16 +99,12 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="dropdown">
-                    <a
-                      className="dropdown-toggle"
-                      data-toggle="dropdown"
-                      href="#"
-                    >
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                       {result.data.navegacionsConnection.edges[3].node.elemento}
-                      <i className="fa fa-angle-right" aria-hidden="true"></i>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
-                    <ul className="dropdown-menu">
+                    <ul class="dropdown-menu">
                       <li>
                         <a href="shop-single.html">Malla Sombra</a>
                       </li>
@@ -137,28 +121,28 @@ const Navbar = () => {
                   </li>
 
                   {/* <div>
-                     <li className="dropdown">
+                     <li class="dropdown">
                     <a
-                      className="dropdown-toggle"
+                      class="dropdown-toggle"
                       data-toggle="dropdown"
                       href="#"
                     >
                       Sub-Menús-Demo
-                      <i className="fa fa-angle-right" aria-hidden="true"></i>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
-                    <ul className="dropdown-menu">
-                      <li className="dropdown">
+                    <ul class="dropdown-menu">
+                      <li class="dropdown">
                         <a
-                          className="dropdown-toggle"
+                          class="dropdown-toggle"
                           data-toggle="dropdown"
                           href="#"
                         >
                           <i
-                            className="fa fa-angle-right"
+                            class="fa fa-angle-right"
                             aria-hidden="true"
                           ></i>
                         </a>
-                        <ul className="dropdown-menu">
+                        <ul class="dropdown-menu">
                           <li>
                             <a href="service.html">Services-Style-1</a>
                           </li>
@@ -167,19 +151,19 @@ const Navbar = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="dropdown">
+                      <li class="dropdown">
                         <a
-                          className="dropdown-toggle"
+                          class="dropdown-toggle"
                           data-toggle="dropdown"
                           href="#"
                         >
                           Nosotros
                           <i
-                            className="fa fa-angle-right"
+                            class="fa fa-angle-right"
                             aria-hidden="true"
                           ></i>
                         </a>
-                        <ul className="dropdown-menu">
+                        <ul class="dropdown-menu">
                           <li>
                             <a href="about-us.html">About-Style-1</a>
                           </li>
@@ -188,19 +172,19 @@ const Navbar = () => {
                           </li>
                         </ul>
                       </li>
-                      <li className="dropdown">
+                      <li class="dropdown">
                         <a
-                          className="dropdown-toggle"
+                          class="dropdown-toggle"
                           data-toggle="dropdown"
                           href="#"
                         >
                           Events{" "}
                           <i
-                            className="fa fa-angle-right"
+                            class="fa fa-angle-right"
                             aria-hidden="true"
                           ></i>
                         </a>
-                        <ul className="dropdown-menu">
+                        <ul class="dropdown-menu">
                           <li>
                             <a href="event.html">Events</a>
                           </li>
@@ -218,24 +202,24 @@ const Navbar = () => {
                       <li>
                         <a href="testimonials.html">Testimonials</a>
                       </li>
-                      <li className="dropdown">
+                      <li class="dropdown">
                         <a
-                          className="dropdown-toggle"
+                          class="dropdown-toggle"
                           data-toggle="dropdown"
                           href="#"
                         >
                           Gallery{" "}
                           <i
-                            className="fa fa-angle-right"
+                            class="fa fa-angle-right"
                             aria-hidden="true"
                           ></i>
                         </a>
-                        <ul className="dropdown-menu">
+                        <ul class="dropdown-menu">
                           <li>
                             <a href="gallery.html">Gallery Basic</a>
                           </li>
                           <li>
-                            <a href="gallery_2.html">Gallery ClassNameic</a>
+                            <a href="gallery_2.html">Gallery classic</a>
                           </li>
                           <li>
                             <a href="gallery_3.html">Gallery Full</a>
@@ -252,16 +236,12 @@ const Navbar = () => {
                   </li> 
                   </div> */}
 
-                  <li className="dropdown">
-                    <a
-                      className="dropdown-toggle"
-                      data-toggle="dropdown"
-                      href="#"
-                    >
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                       {result.data.navegacionsConnection.edges[4].node.elemento}
-                      <i className="fa fa-angle-right" aria-hidden="true"></i>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
-                    <ul className="dropdown-menu">
+                    <ul class="dropdown-menu">
                       <li>
                         <a href="blog.html">Hidroponia</a>
                       </li>

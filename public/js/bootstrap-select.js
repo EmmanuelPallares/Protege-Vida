@@ -602,7 +602,7 @@
         if (!this.$element.find('.bs-title-option').length) {
           // Use native JS to prepend option (faster)
           var element = this.$element[0];
-          titleOption.className = 'bs-title-option';
+          titleOption.class = 'bs-title-option';
           titleOption.innerHTML = this.options.title;
           titleOption.value = '';
           element.insertBefore(titleOption, element.firstChild);
@@ -626,7 +626,7 @@
         if ($this.hasClass('bs-title-option')) return;
 
         // Get the class and text for the option
-        var optionClass = this.className || '',
+        var optionClass = this.class || '',
             inline = htmlEscape(this.style.cssText),
             text = $this.data('content') ? $this.data('content') : $this.html(),
             tokens = $this.data('tokens') ? $this.data('tokens') : null,
@@ -671,7 +671,7 @@
             }
           }
 
-          var optGroupClass = ' ' + $parent[0].className || '';
+          var optGroupClass = ' ' + $parent[0].class || '';
 
           if ($this.index() === 0) { // Is it the first option of the optgroup?
             optID += 1;
@@ -863,11 +863,11 @@
           actions = this.options.actionsBox && this.multiple && this.$menu.find('.bs-actionsbox').length > 0 ? this.$menu.find('.bs-actionsbox')[0].cloneNode(true) : null,
           doneButton = this.options.doneButton && this.multiple && this.$menu.find('.bs-donebutton').length > 0 ? this.$menu.find('.bs-donebutton')[0].cloneNode(true) : null;
 
-      text.className = 'text';
-      newElement.className = this.$menu[0].parentNode.className + ' open';
-      menu.className = 'dropdown-menu open';
-      menuInner.className = 'dropdown-menu inner';
-      divider.className = 'divider';
+      text.class = 'text';
+      newElement.class = this.$menu[0].parentNode.class + ' open';
+      menu.class = 'dropdown-menu open';
+      menuInner.class = 'dropdown-menu inner';
+      divider.class = 'divider';
 
       text.appendChild(document.createTextNode('Inner text'));
       a.appendChild(text);
@@ -877,8 +877,8 @@
       if (header) menu.appendChild(header);
       if (search) {
         var input = document.createElement('input');
-        search.className = 'bs-searchbox';
-        input.className = 'form-control';
+        search.class = 'bs-searchbox';
+        input.class = 'form-control';
         search.appendChild(input);
         menu.appendChild(search);
       }
@@ -988,12 +988,12 @@
       if (this.options.size === 'auto') {
         var getSize = function () {
           var minHeight,
-              hasClass = function (className, include) {
+              hasClass = function (class, include) {
                 return function (element) {
                     if (include) {
-                        return (element.classList ? element.classList.contains(className) : $(element).hasClass(className));
+                        return (element.classList ? element.classList.contains(class) : $(element).hasClass(class));
                     } else {
-                        return !(element.classList ? element.classList.contains(className) : $(element).hasClass(className));
+                        return !(element.classList ? element.classList.contains(class) : $(element).hasClass(class));
                     }
                 };
               },

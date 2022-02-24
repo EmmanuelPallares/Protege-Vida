@@ -1,62 +1,58 @@
 import React from "react";
+import "./HelpingFeatures.css";
 
 const HelpingFeatures = () => {
   return (
     <div>
-      <section className="full-row background-6 before-muddy padding-100">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4 col-sm-4">
+      <section class="full-row gradientGreen before-muddy padding-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
               <div
-                className="bg-white help-info wow zoomIn"
+                class="bg-white help-info wow zoomIn"
                 data-wow-delay="300ms"
                 data-wow-duration="700ms"
               >
                 <span>
-                  <i className="flaticon-business-1"></i>
+                  <i class="flaticon-business-1"></i>
                 </span>
-                <h4 className="inner-title">
-                  <a href="#">Trusted Payment</a>
+                <h4 class="inner-title">
+                  <a href="#">Asesoría</a>
                 </h4>
-                <p>
-                  We have easy payment process, it's very secure and trusted
-                </p>
+                <p>Todos nuestros servicios incluyen asesorias via whatsapp.</p>
               </div>
             </div>
-            <div className="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4">
               <div
-                className="bg-white help-info wow zoomIn"
+                class="bg-white help-info wow zoomIn"
                 data-wow-delay="500ms"
                 data-wow-duration="700ms"
               >
                 <span>
-                  <i className="flaticon-user-1"></i>
+                  <i class="flaticon-user-1"></i>
                 </span>
-                <h4 className="inner-title">
-                  <a href="#">Build Your Career</a>
+                <h4 class="inner-title">
+                  <a href="#">Video Instalación</a>
                 </h4>
                 <p>
-                  There have lot's of oppertunity to show your experience with
-                  us
+                  Los invernaderos que se envian incluyen video interactivo para
+                  facil armado.
                 </p>
               </div>
             </div>
-            <div className="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4">
               <div
-                className="bg-white help-info wow zoomIn"
+                class="bg-white help-info wow zoomIn"
                 data-wow-delay="700ms"
                 data-wow-duration="700ms"
               >
                 <span>
-                  <i className="flaticon-consulting-message"></i>
+                  <i class="flaticon-consulting-message"></i>
                 </span>
-                <h4 className="inner-title">
-                  <a href="#">Free Consulting</a>
+                <h4 class="inner-title">
+                  <a href="#">Pago Seguro</a>
                 </h4>
-                <p>
-                  Your can get consulting from our expert and also get a
-                  estimate
-                </p>
+                <p>Protege tu compra con Mercado Libre y mercado pago.</p>
               </div>
             </div>
           </div>

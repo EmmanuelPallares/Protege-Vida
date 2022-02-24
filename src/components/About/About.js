@@ -1,7 +1,21 @@
 import React from "react";
 import "./About.css";
 import { gql, useQuery } from "urql";
+import $ from "jquery";
 
+$(document).ready(function () {
+  var dynamicDelay = [1500, 1000, 1200];
+  var fallbackValue = "500ms";
+
+  $(".service-item.wow").each(function (index) {
+    $(this).attr(
+      "data-wow-delay",
+      typeof dynamicDelay[index] === "undefined"
+        ? fallbackValue
+        : dynamicDelay[index] + "ms"
+    );
+  });
+});
 const AboutText = gql`
   {
     nosotrossConnection {
@@ -31,45 +45,45 @@ const Nosotros = () => {
   if (error) return <p>Oh no... {error.message}</p>;
 
   return (
-    <div className="margin-top-100">
-      <section className="full-row about-company">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
+    <div class="margin-top-100">
+      <section class="full-row about-company">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
               <div
-                className="wow fadeInLeft"
+                class="wow fadeInLeft"
                 data-wow-delay="300ms"
                 data-wow-duration="700ms"
               >
-                <h2 className="title">
+                <h2 class="title">
                   <span>Bienvenido </span>{" "}
                   {
                     result.data.nosotrossConnection.edges[0].node
                       .tituloPrincipal
                   }
                 </h2>
-                <span className="sub-title">
+                <span class="sub-title">
                   {" "}
                   {result.data.nosotrossConnection.edges[0].node.subtituloAbout}
                 </span>
-                <div className="text-area">
+                <div class="text-area">
                   {
                     result.data.nosotrossConnection.edges[0].node
                       .subtituloAbout2
                   }
                 </div>
               </div>
-              <div className="row">
-                <div className="fact-counter">
-                  <div className="col-lg-3 col-sm-3 col-xs-6">
+              <div class="row">
+                <div class="fact-counter">
+                  <div class="col-lg-3 col-sm-3 col-xs-6">
                     <div
-                      className="count color-dark wow fadeIn"
+                      class="count color-dark wow fadeIn"
                       data-wow-delay="300ms"
                       data-wow-duration="700ms"
                     >
-                      <span className="flat-icon flaticon-line-chart color-default"></span>
+                      <span class="flat-icon flaticon-line-chart color-default"></span>
                       <div
-                        className="amount count-num"
+                        class="amount count-num"
                         data-speed="3000"
                         data-stop="230"
                       >
@@ -78,15 +92,15 @@ const Nosotros = () => {
                       <span>Años de Experiencia</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-sm-3 col-xs-6">
+                  <div class="col-lg-3 col-sm-3 col-xs-6">
                     <div
-                      className="count color-dark wow fadeIn"
+                      class="count color-dark wow fadeIn"
                       data-wow-delay="300ms"
                       data-wow-duration="700ms"
                     >
-                      <span className="flat-icon flaticon-user-1 color-default"></span>
+                      <span class="flat-icon flaticon-user-1 color-default"></span>
                       <div
-                        className="amount count-num"
+                        class="amount count-num"
                         data-speed="3000"
                         data-stop="141"
                       >
@@ -95,15 +109,15 @@ const Nosotros = () => {
                       <span>Productos Quultiva</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-sm-3 col-xs-6">
+                  <div class="col-lg-3 col-sm-3 col-xs-6">
                     <div
-                      className="count color-dark wow fadeIn"
+                      class="count color-dark wow fadeIn"
                       data-wow-delay="300ms"
                       data-wow-duration="700ms"
                     >
-                      <span className="flat-icon flaticon-nature-3 color-default"></span>
+                      <span class="flat-icon flaticon-nature-3 color-default"></span>
                       <div
-                        className="amount count-num"
+                        class="amount count-num"
                         data-speed="3000"
                         data-stop="172"
                       >
@@ -112,15 +126,15 @@ const Nosotros = () => {
                       <span>Diseños Originales</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-sm-3 col-xs-6">
+                  <div class="col-lg-3 col-sm-3 col-xs-6">
                     <div
-                      className="count color-dark wow fadeIn"
+                      class="count color-dark wow fadeIn"
                       data-wow-delay="300ms"
                       data-wow-duration="700ms"
                     >
-                      <span className="flat-icon flaticon-time color-default"></span>
+                      <span class="flat-icon flaticon-time color-default"></span>
                       <div
-                        className="amount count-num"
+                        class="amount count-num"
                         data-speed="3000"
                         data-stop="2347"
                       >
@@ -134,9 +148,9 @@ const Nosotros = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div class="col-md-4">
               <img
-                className="none-mobile"
+                class="none-mobile"
                 src={
                   result.data.nosotrossConnection.edges[5].node.soloImagen.url
                 }
@@ -146,66 +160,66 @@ const Nosotros = () => {
           </div>
 
           {/* ICONOS DIVIDER */}
-          <div className="row">
-            <div className="col-md-4 col-sm-4">
-              <div className="dark-gradient about-link">
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <div class="dark-gradient about-link">
                 <img
                   src={
                     result.data.nosotrossConnection.edges[4].node.soloImagen.url
                   }
                   alt=""
                 />
-                <div className="overlay">
-                  <h5 className="inner-title">
+                <div class="overlay">
+                  <h5 class="inner-title">
                     {" "}
                     {
                       result.data.nosotrossConnection.edges[4].node
                         .tituloPrincipal
                     }
                   </h5>
-                  <a href="#" className="btn-link">
+                  <a href="#" class="btn-link">
                     Leer más
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-sm-4">
-              <div className="dark-gradient about-link">
+            <div class="col-md-4 col-sm-4">
+              <div class="dark-gradient about-link">
                 <img
                   src={
                     result.data.nosotrossConnection.edges[2].node.soloImagen.url
                   }
                   alt="sdscsf"
                 />
-                <div className="overlay">
-                  <h5 className="inner-title">
+                <div class="overlay">
+                  <h5 class="inner-title">
                     {
                       result.data.nosotrossConnection.edges[2].node
                         .tituloPrincipal
                     }
                   </h5>
-                  <a href="#" className="btn-link">
+                  <a href="#" class="btn-link">
                     Leer más
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-sm-4">
-              <div className="dark-gradient about-link">
+            <div class="col-md-4 col-sm-4">
+              <div class="dark-gradient about-link">
                 <img
                   src={
                     result.data.nosotrossConnection.edges[3].node.soloImagen.url
                   }
                   alt="big"
                 />
-                <div className="overlay">
-                  <h5 className="inner-title">
+                <div class="overlay">
+                  <h5 class="inner-title">
                     {
                       result.data.nosotrossConnection.edges[3].node
                         .tituloPrincipal
                     }
                   </h5>
-                  <a href="#" className="btn-link">
+                  <a href="#" class="btn-link">
                     Saber más
                   </a>
                 </div>

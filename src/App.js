@@ -9,6 +9,7 @@ import MostImportantFeatures from "./components/MostImportantFeatures/MostImport
 import Footer from "./components/Footer/Footer";
 import HelpingFeatures from "./components/HelpingFeatures/HelpingFeatures";
 import MisionVision from "./components/MisionVision/MisionVision";
+import Services from "./components/Services/Services";
 
 function Inicio() {
   return (
@@ -16,9 +17,10 @@ function Inicio() {
       <Navbar />
       <About />
       <MisionVision />
-      <MostImportantFeatures />
-      <Ourservices />
-      <Choose />
+      <Services />
+      {/* <MostImportantFeatures />
+      <Ourservices /> */}
+      {/* <Choose /> */}
       <HelpingFeatures />
       <Footer />
     </>

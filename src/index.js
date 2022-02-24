@@ -17,6 +17,8 @@ import "../src/css/owl.css";
 import "../src/css/responsive.css";
 import "../src/css/settings.css";
 import "../src/css/style.css";
+import { CustomPreloader } from "react-preloaders";
+import Preloader from "./components/Preloader/Preloader";
 import { createClient, Provider } from "urql";
 
 const client = createClient({
@@ -24,11 +26,14 @@ const client = createClient({
 });
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Provider value={client}>
-      <Navbar />
-      <App />
-    </Provider>
-  </BrowserRouter>,
+  <React.Fragment>
+    <BrowserRouter>
+      <Provider value={client}>
+        <Navbar />
+        <App />
+        <Preloader />
+      </Provider>
+    </BrowserRouter>
+  </React.Fragment>,
   document.getElementById("root")
 );

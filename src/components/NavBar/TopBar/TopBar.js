@@ -4,31 +4,31 @@ import "../TopBar/TopBar.css";
 const TopBar = () => {
   return (
     <div>
-      <div className="bg-default top-header">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 col-sm-6">
-              <ul className="top-info-left">
+      <div class="bg-default top-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <ul class="top-info-left">
                 <li>Bienvenido a ProtegeVida</li>
               </ul>
             </div>
-            <div className="col-md-6 col-sm-6">
-              <div className="top-info-right">
-                <div className="soc-icon pull-right">
+            <div class="col-md-6 col-sm-6">
+              <div class="top-info-right">
+                <div class="soc-icon pull-right">
                   <a href="#">
-                    <i className="fa fa-facebook"></i>
+                    <i class="fa fa-facebook"></i>
                   </a>
                   <a href="#">
-                    <i className="fa fa-twitter"></i>
+                    <i class="fa fa-twitter"></i>
                   </a>
                   <a href="#">
                     {" "}
-                    <i className="fa fa-linkedin"></i>{" "}
+                    <i class="fa fa-linkedin"></i>{" "}
                   </a>
                 </div>
-                <ul className="user-nav pull-right">
-                  <li className="dropdown">
-                    <a className="user-toggle" data-toggle="dropdown" href="#">
+                <ul class="user-nav pull-right">
+                  <li class="dropdown">
+                    <a class="user-toggle" data-toggle="dropdown" href="#">
                       Redes Sociales
                     </a>
                   </li>

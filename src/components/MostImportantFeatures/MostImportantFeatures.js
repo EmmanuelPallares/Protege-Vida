@@ -26,18 +26,18 @@ const MostImportantFeatures = () => {
 
   return (
     <>
-      <section className="full-row">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <h2 className="title wow fadeInRight">
+      <section class="full-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h2 class="title wow fadeInRight">
                 {
                   result.data.serviciosDestacadosPConnection.edges[0].node
                     .encabezado
                 }
               </h2>
               <span
-                className="sub-title wow fadeInRight"
+                class="sub-title wow fadeInRight"
                 data-wow-delay="800ms"
                 data-wow-duration="1000ms"
               >
@@ -48,16 +48,16 @@ const MostImportantFeatures = () => {
               </span>
 
               {/* ICONS AND TEXT */}
-              <ul className="feature">
+              <ul class="feature">
                 <li>
                   <span
-                    className="wow bounceIn"
+                    class="wow bounceIn"
                     data-wow-delay="500ms"
                     data-wow-duration="1000ms"
                   >
-                    <i className="color-default flat-icon flaticon-wallet"></i>
+                    <i class="color-default flat-icon flaticon-wallet"></i>
                   </span>
-                  <div className="feature-item">
+                  <div class="feature-item">
                     <h4>
                       {
                         result.data.serviciosDestacadosPConnection.edges[4].node
@@ -74,7 +74,7 @@ const MostImportantFeatures = () => {
                 </li>
                 <li>
                   <span
-                    className="wow bounceIn"
+                    class="wow bounceIn"
                     data-wow-delay="600ms"
                     data-wow-duration="1000ms"
                   >
@@ -87,7 +87,7 @@ const MostImportantFeatures = () => {
                       height="70"
                     />
                   </span>
-                  <div className="feature-item">
+                  <div class="feature-item">
                     <h4>
                       {" "}
                       {
@@ -105,13 +105,13 @@ const MostImportantFeatures = () => {
                 </li>
                 <li>
                   <span
-                    className="wow bounceIn"
+                    class="wow bounceIn"
                     data-wow-delay="700ms"
                     data-wow-duration="1000ms"
                   >
-                    <i className="color-default flat-icon flaticon-guarantee"></i>
+                    <i class="color-default flat-icon flaticon-guarantee"></i>
                   </span>
-                  <div className="feature-item">
+                  <div class="feature-item">
                     <h4>
                       {
                         result.data.serviciosDestacadosPConnection.edges[4].node
@@ -128,7 +128,7 @@ const MostImportantFeatures = () => {
                 </li>
                 <li>
                   <span
-                    className="wow bounceIn"
+                    class="wow bounceIn"
                     data-wow-delay="800ms"
                     data-wow-duration="1000ms"
                   >
@@ -141,7 +141,7 @@ const MostImportantFeatures = () => {
                       height="70"
                     />
                   </span>
-                  <div className="feature-item">
+                  <div class="feature-item">
                     <h4>
                       {" "}
                       {
@@ -159,10 +159,10 @@ const MostImportantFeatures = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-4">
-              <div className="row">
-                <div className="col-md-12 col-sm-6">
-                  <div className="before-muddy margin-bottom-30">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12 col-sm-6">
+                  <div class="before-muddy margin-bottom-30">
                     <img
                       src={
                         result.data.serviciosDestacadosPConnection.edges[8].node
@@ -170,11 +170,11 @@ const MostImportantFeatures = () => {
                       }
                       alt="ssssssss"
                     />
-                    <div className="overlay img-box">
-                      <span className="icon-border">
-                        <i className="color-white flaticon-business-1"></i>
+                    <div class="overlay img-box">
+                      <span class="icon-border">
+                        <i class="color-white flaticon-business-1"></i>
                       </span>
-                      <h4 className="inner-title color-white">
+                      <h4 class="inner-title color-white">
                         {
                           result.data.serviciosDestacadosPConnection.edges[8]
                             .node.encabezado
@@ -186,14 +186,14 @@ const MostImportantFeatures = () => {
                             .node.subtitulo
                         }
                       </p>
-                      <a href="#" className="btn btn-default">
+                      <a href="#" class="btn btn-default">
                         Leer más
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-12 col-sm-6">
-                  <div className="before-muddy margin-bottom-30">
+                <div class="col-md-12 col-sm-6">
+                  <div class="before-muddy margin-bottom-30">
                     <img
                       src={
                         result.data.serviciosDestacadosPConnection.edges[9].node
@@ -201,11 +201,11 @@ const MostImportantFeatures = () => {
                       }
                       alt="dddddddddddddddd"
                     />
-                    <div className="overlay img-box">
-                      <span className="icon-border">
-                        <i className="color-white flaticon-wallet"></i>
+                    <div class="overlay img-box">
+                      <span class="icon-border">
+                        <i class="color-white flaticon-wallet"></i>
                       </span>
-                      <h4 className="inner-title color-white">
+                      <h4 class="inner-title color-white">
                         {
                           result.data.serviciosDestacadosPConnection.edges[9]
                             .node.encabezado
@@ -217,7 +217,7 @@ const MostImportantFeatures = () => {
                             .node.subtitulo
                         }
                       </p> */}
-                      <a href="#" className="btn btn-default">
+                      <a href="#" class="btn btn-default">
                         Ver más
                       </a>
                     </div>
