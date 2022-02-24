@@ -73,7 +73,7 @@
 }
 .owl-carousel .owl-stage-outer {
   position: relative;
-  z-index: 2;
+  z-index:2;
   overflow: hidden;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
@@ -162,7 +162,7 @@
 /* 
  * 	Owl Carousel - Video Plugin
  */
-/* .owl-carousel .owl-video-wrapper {
+.owl-carousel .owl-video-wrapper {
   position: relative;
   height: 100%;
   background: #000;
@@ -249,40 +249,42 @@
     width: 13px;
 	border-width: 2px;
 	border-style: solid;
-} */
+}
 /*service slider*/
 #srvc-dtl .owl-theme .owl-controls {
-  position: absolute;
-  z-index: 3;
-  right: 40px;
-  top: 50%;
-  transform: translateY(-50%);
+	position: absolute;
+	z-index: 3;
+	right: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+	
 }
 #srvc-dtl .owl-theme .owl-dots .owl-dot {
-  display: table;
+    display: table;
 }
 #srvc-dtl .owl-theme .owl-dots .owl-dot span {
-  background: none repeat scroll 0 0 #fff;
-  border-radius: 50%;
-  display: inline-block;
-  height: 6px;
-  margin: 0;
-  width: 6px;
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 6px;
+    margin: 0;
+    width: 6px;
 }
 #srvc-dtl .owl-theme .owl-dots .owl-dot.active span {
-  background: none repeat scroll 0 0 #6fa409;
-  height: 10px;
-  margin-left: -2px;
-  margin-bottom: -2px;
-  width: 10px;
+    background: none repeat scroll 0 0 #6fa409;
+	height: 10px;
+    margin-left: -2px;
+    margin-bottom: -2px;
+    width: 10px;
 }
 
 /*Recent Product slider*/
 .recent-product-slider.owl-theme .owl-controls {
-  position: absolute;
-  z-index: 3;
-  right: 0;
-  top: -55px;
+	position: absolute;
+	z-index: 3;
+	right: 0;
+	top: -55px;
+	
 }
 .recent-product-slider.owl-theme .owl-controls .owl-nav [class*="owl-"] {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -295,41 +297,43 @@
   text-align: right;
 }
 .recent-product-slider.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover {
-  background: none;
-  color: #6fa409;
-  text-decoration: none;
+    background: none;
+    color: #6fa409;
+    text-decoration: none;
 }
-.recent-product-slider.owl-theme .owl-controls .owl-nav .owl-prev {
-  margin-right: 8px;
+.recent-product-slider.owl-theme .owl-controls .owl-nav .owl-prev{
+ margin-right: 8px
 }
 
 /*Single Product image slider*/
 .single-product-slider.owl-theme .owl-controls {
-  position: absolute;
-  z-index: 3;
-  right: 0;
-  top: 48%;
-  width: 100%;
-  transform: translateY(-50%);
+	position: absolute;
+	z-index: 3;
+	right: 0;
+	top:48%;
+	width: 100%;
+	transform: translateY(-50%);
+	
 }
 .single-product-slider.owl-theme .owl-controls .owl-nav .owl-prev {
-  color: #000;
-  float: left;
-  font-size: 24px;
-  font-weight: 500;
-  height: 0;
-  line-height: 0;
+	color: #000;
+	float: left;
+	font-size: 24px;
+	font-weight: 500;
+	height: 0;
+	line-height: 0;
 }
 .single-product-slider.owl-theme .owl-controls .owl-nav .owl-next {
-  color: #000;
-  float: right;
-  font-size: 24px;
-  font-weight: 500;
-  height: 0;
-  line-height: 0;
+	color: #000;
+	float: right;
+	font-size: 24px;
+	font-weight: 500;
+	height: 0;
+	line-height: 0;
 }
 .single-product-slider.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover {
-  background: none;
-  color: #6fa409;
-  text-decoration: none;
+    background: none;
+    color: #6fa409;
+    text-decoration: none;
 }
+
