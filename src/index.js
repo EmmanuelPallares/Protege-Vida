@@ -2,7 +2,6 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import Navbar from "./components/NavBar/Navbar";
 import { BrowserRouter } from "react-router-dom";
-import "./index.css";
 import App from "./App";
 import "../src/css/bootstrap.css";
 import "../src/css/color.css";

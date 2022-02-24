@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/NavBar/Navbar";
 import About from "./components/About/About";
@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import HelpingFeatures from "./components/HelpingFeatures/HelpingFeatures";
 import MisionVision from "./components/MisionVision/MisionVision";
 import Services from "./components/Services/Services";
+import HowToBuy from "./components/HowToBuy/HowToBuy";
 
 function Inicio() {
   return (
@@ -22,6 +23,7 @@ function Inicio() {
       <Ourservices /> */}
       {/* <Choose /> */}
       <HelpingFeatures />
+      <HowToBuy />
       <Footer />
     </>
   );

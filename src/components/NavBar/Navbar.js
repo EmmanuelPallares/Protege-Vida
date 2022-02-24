@@ -1,6 +1,4 @@
 import React from "react";
-import React from "react";
-
 import "./Navbar.css";
 import TopBar from "./TopBar/TopBar";
 import ContactBar from "./ContactBar/ContactBar";
