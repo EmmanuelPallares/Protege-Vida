@@ -73,34 +73,28 @@ const Navbar = () => {
                         <Link to="/">Huertos</Link>
                       </li>
                       <li>
-                        <a href="projects-box.html">Plagas</a>
+                        <Link to="/">Plagas</Link>
                       </li>
                       <li>
-                        <a href="projects-classic.html">Riego Insumos</a>
+                        <Link to="/">Riego Insumos</Link>
                       </li>
                       <li>
-                        <a href="single-project.html">Fertilizantes</a>
+                        <Link to="/">Fertilizantes</Link>
                       </li>
                       <li>
-                        <a href="single-project.html">Cultivo</a>
+                        <Link to="/">Cultivo</Link>
                       </li>
                       <li>
-                        <a href="single-project.html">Biogreen</a>
+                        <Link to="/">Biogreen</Link>
                       </li>
                       <li>
-                        <a href="single-project.html">
-                          Invernaderos Mediana Escala
-                        </a>
+                        <Link to="/">Invernaderos Mediana Escala</Link>
                       </li>
                       <li>
-                        <a href="single-project.html">
-                          Invernaderos Escala Comercial
-                        </a>
+                        <Link to="/">Invernaderos Escala Comercial</Link>
                       </li>
                       <li>
-                        <a href="single-project.html">
-                          Accesorios para invernadero
-                        </a>
+                        <Link to="/">Accesorios para invernadero</Link>
                       </li>
                     </ul>
                   </li>

@@ -27,13 +27,13 @@ const Services = () => {
           <div class="col-md-4 col-sm-6">
             <div class="service-box-image">
               <div class="grid-img">
-                <a href="tree-plantation.html">
-                  <img src="images/our_service/2.png" alt="" />
+                <a href="garden-care.html">
+                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
                 </a>
               </div>
-              <div class="service-grid-txt overlay">
-                <h3 class="inner-title">
-                  <a href="tree-plantation.html">Huertos</a>
+              <div class="service-grid-txt">
+                <h3 class="inner-title down-line">
+                  <a href="garden-care.html">Huertos</a>
                 </h3>
                 <p>Azoteas, suelo directo</p>
                 <a href="/" class="btn-link btn btn-default">
@@ -46,7 +46,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="garden-care.html">
-                  <img src="images/our_service/2.png" alt="" />
+                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -64,7 +64,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="watering-garden.html">
-                  <img src="images/our_service/3.png" alt="" />
+                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -84,7 +84,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="garden-design.html">
-                  <img src="images/our_service/4.png" alt="" />
+                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -102,7 +102,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="gutter-repair.html">
-                  <img src="images/our_service/5.png" alt="" />
+                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -120,7 +120,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="lawn-care.html">
-                  <img src="images/our_service/6.png" alt="" />
+                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -138,7 +138,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="land-design.html">
-                  <img src="images/our_service/7.png" alt="" />
+                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -156,7 +156,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="tree-surgery.html">
-                  <img src="images/our_service/8.png" alt="" />
+                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -174,7 +174,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="agricultural-research.html">
-                  <img src="images/our_service/9.png" alt="" />
+                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
