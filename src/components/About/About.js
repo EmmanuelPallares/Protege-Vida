@@ -53,14 +53,6 @@ const Nosotros = () => {
               </div>
             </div>
 
-            {/* Test for wow */}
-            <div
-              class="wow fadeInLeft"
-              data-wow-delay="300ms"
-              data-wow-duration="700ms"
-            >
-              <h2 class="title wow">Lorem wow test</h2>
-            </div>
             <div class="row">
               <div class="fact-counter">
                 <div class="col-lg-3 col-sm-3 col-xs-6">

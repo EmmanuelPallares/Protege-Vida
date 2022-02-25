@@ -28,13 +28,14 @@ const MisionVision = () => {
               <div class="row">
                 <div class="col-md-12">
                   <h2 class="title">
-                    <span>Our</span> Mission
+                    <span>Nuestra</span> Misión
                   </h2>
                   <span class="sub-title">
-                    Blandit libero feugiat erat imperdiet dignissim suspendisse
-                    facilisis senectus parturient eros semper tempus et, blandit
-                    hac egestas conubia mus rutrum dis consequat nulla justo
-                    hymenaeos.
+                    Brindar soluciones integrales para nuestros clientes en el
+                    sector agrícola, adaptando las tecnologías disponibles a
+                    diversas escalas, lo que incluye el suministro de insumos,
+                    la instalación de estructuras para la agricultura protegida
+                    y el asesoramiento en el cultivo orgánico y ecológico.
                   </span>
                   <ul class="check-lst">
                     <li>
@@ -87,13 +88,13 @@ const MisionVision = () => {
               <div class="row">
                 <div class="col-md-12">
                   <h2 class="title">
-                    <span>Our</span> Vision
+                    <span>Nuestra</span> Visión
                   </h2>
                   <span class="sub-title">
-                    Blandit libero feugiat erat imperdiet dignissim suspendisse
-                    facilisis senectus parturient eros semper tempus et, blandit
-                    hac egestas conubia mus rutrum dis consequat nulla justo
-                    hymenaeos.{" "}
+                    Posicionarnos en el mercado mexicano como uno de los
+                    principales proveedores de huertos hortícolas y suministro
+                    de soluciones integrales para la agricultura protegida y
+                    ecológica.
                   </span>
                   <div class="our-vsn">
                     <div class="according_area">
