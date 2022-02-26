@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PageBanner from "../../components/PageBanner/PageBanner";
 import HowToBuy from "../../components/HowToBuy/HowToBuy";
 

@@ -70,7 +70,7 @@ const Navbar = () => {
                     </Link>
                     <ul class="dropdown-menu">
                       <li>
-                        <Link to="/">Huertos</Link>
+                        <Link to="/huertos">Huertos</Link>
                       </li>
                       <li>
                         <Link to="/">Plagas</Link>

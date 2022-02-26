@@ -9,16 +9,19 @@ import HowToBuy from "./components/HowToBuy/HowToBuy";
 import Contacto from "./pages/contacto/Contacto";
 import ComoComprar from "./pages/ComoComprar/ComoComprar";
 import Blog from "./pages/blog/blog";
+import Huertos from "./pages/huertos/huertos";
+import Cultivo from "./pages/cultivo/cultivo";
+import RevolutionSlider from "./components/RevolutionSlider/RevolutionSlider";
 
 function Inicio() {
   return (
     <>
+      {/* <RevolutionSlider /> */}
       <About />
       <MisionVision />
       <Services />
       <HelpingFeatures />
       <HowToBuy />
-      <Footer />
     </>
   );
 }
@@ -30,6 +33,8 @@ function App() {
       <Route path="/contacto" element={<Contacto />} />
       <Route path="/como-comprar" element={<ComoComprar />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/huertos" element={<Huertos />} />
+      <Route path="/cultivo" element={<Cultivo />}></Route>
     </Routes>
   );
 }

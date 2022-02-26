@@ -36,7 +36,7 @@ const Services = () => {
                   <a href="garden-care.html">Huertos</a>
                 </h3>
                 <p>Azoteas, suelo directo</p>
-                <a href="/" class="btn-link btn btn-default">
+                <a href="/huertos" class="btn-link btn btn-default">
                   Ver todo
                 </a>
               </div>
