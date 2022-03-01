@@ -1,5 +1,15 @@
 import React from "react";
-
+const Productos = [
+  { id: 1, name: "Huertos" },
+  { id: 2, name: "Plagas" },
+  { id: 3, name: "Riego Insumos" },
+  { id: 4, name: "Fertilizantes" },
+  { id: 5, name: "Cultivo" },
+  { id: 6, name: "Biogreen" },
+  { id: 7, name: "Invernaderos Mediana Escala" },
+  { id: 8, name: "Invernaderos Escala Comercial" },
+  { id: 9, name: "Accesorios para invernadero" },
+];
 const Footer = () => {
   return (
     <div>
@@ -47,60 +57,15 @@ const Footer = () => {
                   <h3 class="footer-title">Servicios</h3>
                   <div class="footer-content">
                     <ul class="ft-list">
-                      <li>
-                        <a href="tree-plantation.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                          Tree Planting Service
-                        </a>
-                      </li>
-                      <li>
-                        <a href="garden-care.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                          Garden Care Service
-                        </a>
-                      </li>
-                      <li>
-                        <a href="watering-garden.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                          Watering Garden Service
-                        </a>
-                      </li>
-                      <li>
-                        <a href="garden-design.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                          Garden Design Service
-                        </a>
-                      </li>
-                      <li>
-                        <a href="gutter-repair.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                          Gutter Repair Service
-                        </a>
-                      </li>
-                      <li>
-                        <a href="lawn-care.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                          Lawn Care Service
-                        </a>
-                      </li>
-                      <li>
-                        <a href="land-design.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                          Landscape Design Service
-                        </a>
-                      </li>
-                      <li>
-                        <a href="tree-surgery.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                          Tree Surgery Service
-                        </a>
-                      </li>
-                      <li>
-                        <a href="agricultural-research.html">
-                          <i class="fa fa-angle-right" aria-hidden="true"></i>{" "}
-                          Agricultural Research
-                        </a>
-                      </li>
+                      {Productos.map((id, name) => (
+                        <li key={name}>
+                          <a href="garden-care.html">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                            {id.name}
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
