@@ -1,14 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Productos = [
-  { id: 1, name: "Huertos" },
-  { id: 2, name: "Plagas" },
+  {
+    id: 1,
+    name: "Huertos",
+  },
+  {
+    id: 2,
+    name: "Plagas",
+  },
   { id: 3, name: "Riego Insumos" },
-  { id: 4, name: "Fertilizantes" },
-  { id: 5, name: "Cultivo" },
-  { id: 6, name: "Biogreen" },
-  { id: 7, name: "Invernaderos Mediana Escala" },
-  { id: 8, name: "Invernaderos Escala Comercial" },
-  { id: 9, name: "Accesorios para invernadero" },
+  {
+    id: 4,
+    name: "Fertilizantes",
+  },
+  {
+    id: 5,
+    name: "Cultivo",
+  },
+  {
+    id: 6,
+    name: "Biogreen",
+  },
+  {
+    id: 7,
+    name: "Invernaderos Mediana Escala",
+  },
+  {
+    id: 8,
+    name: "Invernaderos Escala Comercial",
+  },
+  {
+    id: 9,
+    name: "Accesorios para invernadero",
+    path: "/accesorios-para-invernadero",
+  },
 ];
 const Footer = () => {
   return (
@@ -20,32 +46,24 @@ const Footer = () => {
               <div class="col-md-3 col-sm-6">
                 <div class="footer-widget">
                   <div class="footer-logo">
-                    <a href="index.html">
-                      <img
-                        class="logo-bottom"
-                        src="images/logo/logo.png"
-                        alt=""
-                      />
-                    </a>
+                    <Link to="/">
+                      <h3 class="footer-title">Quultiva</h3>
+                    </Link>
                   </div>
                   <div class="footer-content">
-                    <p>
-                      Diam eleifend id rhoncus. Eget duis non nulla hendrerit
-                      litora pulvinar, nim rquent augue eros tristique purus sem
-                      amet non potenti.
-                    </p>
+                    <p>Agricultura sustentable al alcance de todos</p>
                     <ul class="ft-list">
                       <li>
-                        <span>Dirección :</span>3112 Roy Alley Denver 80216, USA
+                        <span>Dirección :</span>38445 La Coalanda, GTO
                       </li>
                       <li>
                         <span>Teléfono :</span>
-                        <a href="callto:0123456789">( +1 ) 507-465-6522</a>
+                        <a href="callto:0123456789">( +1 ) 456 114 81 11</a>
                       </li>
                       <li>
                         <span>Email :</span>
-                        <a href="mailto:unicoder16@gmail.com">
-                          ejemplo@gmail.com
+                        <a href="mailto:protegegh@gmail.com ">
+                          protegegh@gmail.com
                         </a>
                       </li>
                     </ul>
@@ -57,13 +75,13 @@ const Footer = () => {
                   <h3 class="footer-title">Servicios</h3>
                   <div class="footer-content">
                     <ul class="ft-list">
-                      {Productos.map((id, name) => (
+                      {Productos.map((id, name, path) => (
                         <li key={name}>
-                          <a href="garden-care.html">
+                          <Link to={path}>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
 
                             {id.name}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -72,7 +90,7 @@ const Footer = () => {
               </div>
               <div class="col-md-3 col-sm-6">
                 <div class="footer-widget">
-                  <h3 class="footer-title">Latest Post Facebook</h3>
+                  <h3 class="footer-title">Recientes Blogs</h3>
                   <div class="footer-content">
                     <div class="tweet">
                       <i class="fa fa-twitter"></i>

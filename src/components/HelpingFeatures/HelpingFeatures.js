@@ -1,6 +1,7 @@
 import React from "react";
 import "./HelpingFeatures.css";
-
+import { FaVideo } from "react-icons/fa";
+FaVideo;
 const HelpingFeatures = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ const HelpingFeatures = () => {
                 data-wow-duration="100ms"
               >
                 <span>
-                  <i class="flaticon-business-1"></i>
+                  <i class="flaticon-consulting-message"></i>
                 </span>
                 <h4 class="inner-title">
                   <a href="#">Asesoría</a>
@@ -29,7 +30,7 @@ const HelpingFeatures = () => {
                 data-wow-duration="700ms"
               >
                 <span>
-                  <i class="flaticon-user-1"></i>
+                  <i class="flaticon-play-button"></i>
                 </span>
                 <h4 class="inner-title">
                   <a href="#">Video Instalación</a>
@@ -47,7 +48,7 @@ const HelpingFeatures = () => {
                 data-wow-duration="700ms"
               >
                 <span>
-                  <i class="flaticon-consulting-message"></i>
+                  <i class="flaticon-shake-hands"></i>
                 </span>
                 <h4 class="inner-title">
                   <a href="#">Pago Seguro</a>
