@@ -9,6 +9,7 @@ const ContactBar = () => {
             <div class="col-md-3 col-sm-3 col-xs-6">
               <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">
+                  logo aqui
                   <img class="nav-logo" src="images/logo/logo3.png" alt="" />
                 </a>
               </div>
@@ -20,7 +21,9 @@ const ContactBar = () => {
                 </div>
                 <div class="contact-number">
                   <div>( +1 ) 456 114 81 11</div>
-                  <span>www.protegevida.com</span>
+                  <a href="/">
+                    <span>www.quultiva.com</span>
+                  </a>
                 </div>
               </div>
               <div class="contact-location">
@@ -34,7 +37,8 @@ const ContactBar = () => {
               </div>
               <div class="btn-quote">
                 <a class="btn btn-primary" href="#">
-                  Solicita un presupuesto
+                  <i class="fa fa-whatsapp fa-2x margin-right"></i>
+                  Whatsapp
                 </a>
               </div>
             </div>

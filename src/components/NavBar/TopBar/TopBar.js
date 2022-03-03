@@ -9,7 +9,7 @@ const TopBar = () => {
           <div class="row">
             <div class="col-md-6 col-sm-6">
               <ul class="top-info-left">
-                <li>Bienvenido a ProtegeVida</li>
+                <li>Bienvenido a Quultiva</li>
               </ul>
             </div>
             <div class="col-md-6 col-sm-6">
@@ -19,11 +19,10 @@ const TopBar = () => {
                     <i class="fa fa-facebook"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
                   </a>
                   <a href="#">
-                    {" "}
-                    <i class="fa fa-linkedin"></i>{" "}
+                    <i class="fa fa-instagram"></i>
                   </a>
                 </div>
                 <ul class="user-nav pull-right">
