@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./About.css";
 import { gql, useQuery } from "urql";
+import $ from "jquery";
 
 const AboutText = gql`
   {
@@ -23,6 +24,18 @@ const AboutText = gql`
 `;
 
 const Nosotros = () => {
+  useEffect(() => {
+    if ($(".wow").length) {
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animated", // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: false, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+      });
+      wow.init();
+    }
+  });
   const [result] = useQuery({ query: AboutText });
 
   const { data, fetching, error } = result;

@@ -11,12 +11,14 @@ import ComoComprar from "./pages/ComoComprar/ComoComprar";
 import Blog from "./pages/blog/blog";
 import Huertos from "./pages/huertos/huertos";
 import Cultivo from "./pages/cultivo/cultivo";
+import Slider from "./components/Slider/Slider";
 import RevolutionSlider from "./components/RevolutionSlider/RevolutionSlider";
 
 function Inicio() {
   return (
     <>
       {/* <RevolutionSlider /> */}
+      <Slider />
       <About />
       <MisionVision />
       <Services />
