@@ -79,11 +79,7 @@ const MostImportantFeatures = () => {
                     data-wow-duration="1000ms"
                   >
                     <img
-                      src={
-                        result.data.serviciosDestacadosPConnection.edges[4].node
-                          .iconServiciosDestacados.url
-                      }
-                      width="200"
+                      src="https://i.imgur.com/5RcTYru.jpg!s.jpg"
                       height="70"
                     />
                   </span>

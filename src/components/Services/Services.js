@@ -28,7 +28,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="garden-care.html">
-                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
+                  <img src="https://i.imgur.com/n8vjPol.jpg" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -46,7 +46,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="garden-care.html">
-                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
+                  <img src="https://i.imgur.com/rYLFTsi.jpg" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -64,7 +64,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="watering-garden.html">
-                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
+                  <img src="https://i.imgur.com/k6KxLhS.jpg" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -84,7 +84,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="garden-design.html">
-                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
+                  <img src="https://i.imgur.com/5RcTYru.jpg" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -102,7 +102,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="gutter-repair.html">
-                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
+                  <img src="https://i.imgur.com/1goNhFz.jpg" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -120,7 +120,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="lawn-care.html">
-                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
+                  <img src="https://i.imgur.com/n8vjPol.jpg" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -138,7 +138,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="land-design.html">
-                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
+                  <img src="https://i.imgur.com/Uio4csG.jpg" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -156,7 +156,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="tree-surgery.html">
-                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
+                  <img src="https://i.imgur.com/Uio4csG.jpg" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
@@ -174,7 +174,7 @@ const Services = () => {
             <div class="service-box-image">
               <div class="grid-img">
                 <a href="agricultural-research.html">
-                  <img src="https://i.imgur.com/jq76ja5.png" alt="" />
+                  <img src="https://i.imgur.com/QkDFqbP.jpg" alt="" />
                 </a>
               </div>
               <div class="service-grid-txt">
