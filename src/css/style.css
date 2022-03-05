@@ -2268,6 +2268,7 @@ a.scroll-btn {
   height: auto;
   position: relative;
 }
+
 #banner::before {
   content: "";
   height: 100%;
@@ -2275,6 +2276,47 @@ a.scroll-btn {
   position: absolute;
   top: 0;
   width: 100%;
+}
+#bannerComoComprar {
+  background: url(../images/Como-Comprar-Banner.png) no-repeat fixed;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#bannerComoComprar:before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#bannerBlog {
+  background: url(../images/Blog-Banner.png) no-repeat fixed;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#bannerBlog:before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#bannerContacto {
+  background: url(../images/Contacto-Banner.png) no-repeat fixed;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 .page-title {
   color: #fff;

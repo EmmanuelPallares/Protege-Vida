@@ -4,7 +4,7 @@ import PageBanner from "../../components/PageBanner/PageBanner";
 const Blog = () => {
   return (
     <section>
-      <PageBanner name="Blog" inicio="Inicio" />
+      <PageBanner name="Blog" inicio="Inicio" banner="bannerBlog" />
     </section>
   );
 };

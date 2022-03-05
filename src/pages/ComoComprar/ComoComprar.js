@@ -5,7 +5,11 @@ import HowToBuy from "../../components/HowToBuy/HowToBuy";
 const ProcesoCompra = () => {
   return (
     <section>
-      <PageBanner name="Como Comprar" inicio="Inicio" />
+      <PageBanner
+        name="Como Comprar"
+        inicio="Inicio"
+        banner="bannerComoComprar"
+      />
       <HowToBuy />
     </section>
   );

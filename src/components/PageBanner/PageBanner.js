@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PageBanner = (props) => {
   return (
     <div>
-      <div id="banner">
+      <div id={props.banner}>
         <div class="container padding-80">
           <div class="row padding-80">
             <div class="col-md-6 col-sm-6">

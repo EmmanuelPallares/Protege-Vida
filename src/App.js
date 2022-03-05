@@ -17,8 +17,6 @@ import RevolutionSlider from "./components/RevolutionSlider/RevolutionSlider";
 function Inicio() {
   return (
     <>
-      {/* <RevolutionSlider /> */}
-      <Slider />
       <About />
       <MisionVision />
       <Services />
