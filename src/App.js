@@ -21,7 +21,6 @@ function Inicio() {
       <MisionVision />
       <Services />
       <HelpingFeatures />
-      <HowToBuy />
     </>
   );
 }

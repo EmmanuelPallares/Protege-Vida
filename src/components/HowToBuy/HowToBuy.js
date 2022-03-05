@@ -174,9 +174,10 @@ const HowToBuy = () => {
               </ul>
             </div>
             <div class="col-md-6 col-sm-6">
-              <div class="background-shade">
-                <img src="images/banner/tree.png" alt="" />
-              </div>
+              <img
+                src="https://i.imgur.com/9GMbPqj.jpg"
+                alt="paqueteria cuultiva"
+              />
             </div>
           </div>
         </div>
