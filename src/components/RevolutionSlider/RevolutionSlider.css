@@ -1,0 +1,6 @@
+.layer1 {
+  z-index: 2;
+  max-width: auto;
+  max-height: auto;
+  white-space: nowrap;
+}
