@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import TopBar from "./TopBar/TopBar";
 import ContactBar from "./ContactBar/ContactBar";
+import $ from "jquery";
 // import { gql, useQuery } from "urql";
 // const navegacionsConnection = gql`
 //   {
@@ -17,6 +18,37 @@ import ContactBar from "./ContactBar/ContactBar";
 //   }
 // `;
 const Navbar = () => {
+  useEffect(() => {
+    $("#bs-example-navbar-collapse-1").each(function () {
+      $(".dropdown-toggle").on("click", function () {
+        if ($(window).width() < 992) {
+          if ($(this).parent(".dropdown").hasClass("visible")) {
+            $(this)
+              .parent(".dropdown")
+              .children(".dropdown-menu")
+              .first()
+              .stop(true, true)
+              .slideUp(300);
+            $(this).parent(".dropdown").removeClass("visible");
+          } else {
+            $(this)
+              .parent(".dropdown")
+              .children(".dropdown-menu")
+              .stop(true, true)
+              .slideDown(300);
+            $(this).parent(".dropdown").addClass("visible");
+          }
+        }
+      });
+
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $(".dropdown-menu").removeAttr("style");
+          $(".dropdown ").removeClass("visible");
+        }
+      });
+    });
+  }, []);
   // const [result] = useQuery({ query: navegacionsConnection });
 
   // const { data, fetching, error } = result;
@@ -62,6 +94,20 @@ const Navbar = () => {
                     <Link class="dropdown-toggle" data-toggle="dropdown" to="/">
                       Inicio
                     </Link>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="index.html">Home Page 1</a>
+                      </li>
+                      <li>
+                        <a href="index_2.html">Home Page 2</a>
+                      </li>
+                      <li>
+                        <a href="index_3.html">Home Page 3</a>
+                      </li>
+                      <li class="first">
+                        <a href="index_4.html">Home Page 4</a>
+                      </li>
+                    </ul>
                   </li>
 
                   {/* Productos*/}
