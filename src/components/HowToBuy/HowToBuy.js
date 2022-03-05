@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import $ from "jquery";
 
 const HowToBuy = () => {
+  useEffect(() => {
+    if ($(".according_details").length) {
+      $(".according_title").on("click", function () {
+        if ($(this).hasClass("active")) {
+          $(this).addClass("active");
+        }
+
+        if ($(this).next(".according_details").is(":visible")) {
+          $(this).removeClass("active");
+        } else {
+          $(".according_title").removeClass("active");
+          $(".according_details").slideUp(300);
+          $(this).addClass("active");
+          $(this).next(".according_details").slideDown(300);
+        }
+      });
+    }
+  }, []);
   return (
     <div class="container">
       <div class="row">
@@ -31,27 +50,26 @@ const HowToBuy = () => {
             </span>
           </div>
 
-          <section>
-            <div class="container">
-              <div class="row">
-                <div class="get-tch full-row">
-                  <div class="col-md-9 col-sm-8 col-xs-12">
-                    <h4 class="banner-title color-white no-margin">
-                      Solicita tu presupuesto ahora mismo por whatsapp
-                    </h4>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-12 box-right-middle">
-                    <div class="btn-quote">
-                      <a class="btn btn-primary" href="#">
-                        <i class="fa fa-whatsapp fa-2x margin-right"></i>
-                        Whatsapp
-                      </a>
-                    </div>
+          <div class="container">
+            <div class="row">
+              <div class="get-tch full-row">
+                <div class="col-md-9 col-sm-8 col-xs-12">
+                  <h4 class="banner-title color-white no-margin">
+                    Solicita tu presupuesto ahora mismo por whatsapp
+                  </h4>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12 box-right-middle">
+                  <div class="btn-quote">
+                    <a class="btn btn-primary" href="#">
+                      <i class="fa fa-whatsapp fa-2x margin-right"></i>
+                      Whatsapp
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+
           <div class="content-details">
             <h3 class="inner-title">Pagos</h3>
             <p>Si aceptas el presupuesto tendrás cuatro opciones de pago:</p>
