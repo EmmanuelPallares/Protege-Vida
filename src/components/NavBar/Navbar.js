@@ -3,26 +3,28 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import TopBar from "./TopBar/TopBar";
 import ContactBar from "./ContactBar/ContactBar";
-import { gql, useQuery } from "urql";
-const navegacionsConnection = gql`
-  {
-    navegacionsConnection {
-      edges {
-        node {
-          elemento
-          slugCategorias
-        }
-      }
-    }
-  }
-`;
+// import { gql, useQuery } from "urql";
+// const navegacionsConnection = gql`
+//   {
+//     navegacionsConnection {
+//       edges {
+//         node {
+//           elemento
+//           slugCategorias
+//         }
+//       }
+//     }
+//   }
+// `;
 const Navbar = () => {
-  const [result] = useQuery({ query: navegacionsConnection });
+  // const [result] = useQuery({ query: navegacionsConnection });
 
-  const { data, fetching, error } = result;
+  // const { data, fetching, error } = result;
 
-  if (fetching) return <p>Fetching products</p>;
-  if (error) return <p>Oh no... {error.message}</p>;
+  // if (fetching) return <p>Fetching products</p>;
+  // if (error) return <p>Oh no... {error.message}</p>;
+
+  // {result.data.navegacionsConnection.edges[2].node.elemento}
   return (
     <>
       <header id="header" class="nav-style-4 four nav-on-top">
@@ -46,7 +48,7 @@ const Navbar = () => {
                 </button>
 
                 <a class="navbar-brand visible991" href="index.html">
-                  <img src="images/logo/logo.png" alt="" />
+                  Logo aqui
                 </a>
               </div>
 
@@ -58,14 +60,14 @@ const Navbar = () => {
                 <ul class="navigation nav navbar-nav navbar-left">
                   <li class="dropdown">
                     <Link class="dropdown-toggle" data-toggle="dropdown" to="/">
-                      {result.data.navegacionsConnection.edges[0].node.elemento}
+                      Inicio
                     </Link>
                   </li>
 
                   {/* Productos*/}
                   <li class="dropdown">
                     <Link class="dropdown-toggle" data-toggle="dropdown" to="/">
-                      {result.data.navegacionsConnection.edges[1].node.elemento}
+                      Productos
                       <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </Link>
                     <ul class="dropdown-menu">
@@ -106,7 +108,7 @@ const Navbar = () => {
                       data-toggle="dropdown"
                       to="como-comprar"
                     >
-                      {result.data.navegacionsConnection.edges[2].node.elemento}
+                      Como Comprar
                     </Link>
                   </li>
 
@@ -117,7 +119,7 @@ const Navbar = () => {
                       data-toggle="dropdown"
                       to="blog"
                     >
-                      {result.data.navegacionsConnection.edges[3].node.elemento}
+                      Blog
                     </Link>
                   </li>
 
@@ -244,7 +246,7 @@ const Navbar = () => {
                       data-toggle="dropdown"
                       to="contacto"
                     >
-                      {result.data.navegacionsConnection.edges[4].node.elemento}
+                      Contacto
                     </Link>
                   </li>
                   <li>{/* <a href="contact.html">Contacto</a> */}</li>
