@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import $ from "jquery";
 
 const RevolutionSlider = () => {
@@ -139,7 +140,7 @@ const RevolutionSlider = () => {
                 data-endspeed="300"
                 data-endeasing="Power1.easeOut"
               >
-                MAKE YOUR HOME CHARMING
+                Bienvenido a Quultiva
               </div>
 
               <div
@@ -176,12 +177,9 @@ const RevolutionSlider = () => {
                 data-endspeed="600"
                 data-endeasing="Power1.easeIn"
               >
-                Vivamus ornare. Sem molestie. Ut interdum convallis, hac
-                fringilla ridiculus ultricies, <br />
-                ornare fringilla Dui blandit netus mollis netus augue ridiculus
-                duis odio
+                Ya estamos en la WEB <br />
                 <br />
-                velit lacinia tortor condimentum.
+                Siempre pensando en nuestros clientes.
               </div>
 
               <div
@@ -199,11 +197,11 @@ const RevolutionSlider = () => {
                 data-endelementdelay="0.1"
                 data-linktoslide="next"
               >
-                <div class="text-center">
+                {/* <div class="text-center">
                   <a href="get_quote.html" class="btn btn-primary">
                     Get a Quote
                   </a>
-                </div>
+                </div> */}
               </div>
             </li>
 
@@ -258,7 +256,7 @@ const RevolutionSlider = () => {
                 data-endelementdelay="0.1"
                 data-endspeed="300"
               >
-                WE CAN HELP YOU TO MAKE A GARDEN
+                Invernaderos Comerciales
               </div>
 
               <div
@@ -295,11 +293,8 @@ const RevolutionSlider = () => {
                 data-endspeed="600"
                 data-endeasing="Power1.easeIn"
               >
-                Vivamus ornare. Sem molestie. Ut interdum convallis, hac
-                fringilla ridiculus ultricies.
                 <br />
-                ornare fringilla Dui blandit netus mollis netus augue ridiculus
-                duis odio
+                Tipo túnel, ventana cenital fija y abatible.
               </div>
 
               <div
@@ -318,9 +313,9 @@ const RevolutionSlider = () => {
                 data-linktoslide="next"
               >
                 <div class="text-center">
-                  <a href="contact.html" class="btn btn-default">
-                    Get In Touch
-                  </a>
+                  <Link to="invernaderos-comerciales" class="btn btn-default">
+                    Ver todo
+                  </Link>
                 </div>
               </div>
             </li>
@@ -332,7 +327,7 @@ const RevolutionSlider = () => {
               data-saveperformance="off"
             >
               <img
-                src="https://i.imgur.com/lKGLFtM.jpg"
+                src="https://i.imgur.com/l6ROPrx.jpg"
                 alt="kenburns6"
                 data-bgposition="center top"
                 data-kenburns="on"
@@ -376,7 +371,7 @@ const RevolutionSlider = () => {
                 data-endspeed="300"
                 data-endeasing="Power1.easeOut"
               >
-                WE HAVE RESEARCH CENTER
+                Producto Nuevo
               </div>
 
               <div
@@ -413,10 +408,8 @@ const RevolutionSlider = () => {
                 data-endspeed="600"
                 data-endeasing="Power1.easeIn"
               >
-                Vivamus ornare. Sem molestie. Ut interdum convallis, hac
-                fringilla ridiculus ultricies, <br />
-                ornare fringilla Dui blandit netus mollis netus augue ridiculus
-                duis odio.
+                Biogreen <br />
+                Huertos de Terraza.
               </div>
 
               <div
@@ -434,7 +427,7 @@ const RevolutionSlider = () => {
                 data-endelementdelay="0.1"
                 data-endspeed="300"
               >
-                Agricultural Research
+                Optimiza tu espacio
               </div>
 
               <div
@@ -470,12 +463,33 @@ const RevolutionSlider = () => {
                 data-endelementdelay="0.1"
                 data-endspeed="300"
               >
+                <div
+                  class="tp-caption customin tp-resizeme rs-parallaxlevel-0"
+                  data-x="center"
+                  data-hoffset="0"
+                  data-y="500"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                  data-speed="500"
+                  data-start="2900"
+                  data-easing="Power3.easeInOut"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-elementdelay="0.1"
+                  data-endelementdelay="0.1"
+                  data-linktoslide="next"
+                >
+                  <div class="text-center">
+                    <Link to="invernaderos-comerciales" class="btn btn-default">
+                      Ver todo
+                    </Link>
+                  </div>
+                </div>
                 <img
-                  src="https://i.imgur.com/oHLQI9W.jpg"
-                  alt="https://i.imgur.com/oHLQI9W.jpg"
+                  src="https://i.imgur.com/XyzeKN2.png"
+                  alt="check"
                   data-ww="17"
                   data-hh="17"
-                  data-lazyload="images/check.png"
+                  data-lazyload="https://i.imgur.com/XyzeKN2.png"
                 />
               </div>
 
@@ -494,8 +508,11 @@ const RevolutionSlider = () => {
                 data-endelementdelay="0.1"
                 data-endspeed="300"
               >
-                Interior Architecture
+                Mejora tu producción
               </div>
+              <Link to="biogreen" class="btn btn-default">
+                Ver todo
+              </Link>
 
               <div
                 class="tp-caption greenbox30 customin fadeout tp-resizeme rs-parallaxlevel-10"
@@ -531,11 +548,11 @@ const RevolutionSlider = () => {
                 data-endspeed="300"
               >
                 <img
-                  src="../images/dummy.png"
+                  src="https://i.imgur.com/XyzeKN2.png"
                   alt=""
                   data-ww="17"
                   data-hh="17"
-                  data-lazyload="images/check.png"
+                  data-lazyload="https://i.imgur.com/XyzeKN2.png"
                 />
               </div>
 
@@ -554,7 +571,7 @@ const RevolutionSlider = () => {
                 data-endelementdelay="0.1"
                 data-endspeed="300"
               >
-                Technology and Tools
+                Controla Plagas y Enfermedades
               </div>
 
               <div
@@ -591,11 +608,11 @@ const RevolutionSlider = () => {
                 data-endspeed="300"
               >
                 <img
-                  src="images/dummy.png"
+                  src="https://i.imgur.com/XyzeKN2.png"
                   alt=""
                   data-ww="17"
                   data-hh="17"
-                  data-lazyload="images/check.png"
+                  data-lazyload="https://i.imgur.com/XyzeKN2.png"
                 />
               </div>
             </li>

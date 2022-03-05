@@ -13,6 +13,7 @@ import Huertos from "./pages/huertos/huertos";
 import Cultivo from "./pages/cultivo/cultivo";
 import Slider from "./components/Slider/Slider";
 import RevolutionSlider from "./components/RevolutionSlider/RevolutionSlider";
+import Comerciales from "./pages/comerciales/Comerciales";
 
 function Inicio() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Route path="/blog" element={<Blog />} />
       <Route path="/huertos" element={<Huertos />} />
       <Route path="/cultivo" element={<Cultivo />}></Route>
+      <Route path="/invernaderos-comerciales" element={<Comerciales />}></Route>
     </Routes>
   );
 }
