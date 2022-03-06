@@ -1,30 +1,87 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./About.css";
-import { gql, useQuery } from "urql";
+// import { gql, useQuery } from "urql";
 import $ from "jquery";
 
-const AboutText = gql`
-  {
-    nosotrossConnection {
-      edges {
-        node {
-          tituloPrincipal
-          subtituloAbout
-          subtituloAbout2
-          imagenAbout1 {
-            url
-          }
-          soloImagen {
-            url
-          }
-        }
-      }
-    }
-  }
-`;
+// const AboutText = gql`
+//   {
+//     nosotrossConnection {
+//       edges {
+//         node {
+//           tituloPrincipal
+//           subtituloAbout
+//           subtituloAbout2
+//           imagenAbout1 {
+//             url
+//           }
+//           soloImagen {
+//             url
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
 
 const Nosotros = () => {
   useEffect(() => {
+    function factCounter() {
+      if ($(".fact-counter").length) {
+        $(".fact-counter .count.animated").each(function () {
+          var $t = $(this),
+            n = $t.find(".count-num").attr("data-stop"),
+            r = parseInt($t.find(".count-num").attr("data-speed"), 10);
+
+          if (!$t.hasClass("counted")) {
+            $t.addClass("counted");
+            $({
+              countNum: $t.find(".count-text").text(),
+            }).animate(
+              {
+                countNum: n,
+              },
+              {
+                duration: r,
+                easing: "linear",
+                step: function () {
+                  $t.find(".count-num").text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                  $t.find(".count-num").text(this.countNum);
+                },
+              }
+            );
+          }
+
+          //set skill building height
+
+          var size = $(this).children(".progress-bar").attr("aria-valuenow");
+          $(this)
+            .children(".progress-bar")
+            .css("width", size + "%");
+        });
+      }
+    }
+    function jumptotop() {
+      var $scrollsize = $(window).scrollTop();
+      if ($scrollsize > 300) {
+        $(".scroll-to-top").fadeIn(1000);
+      } else {
+        $(".scroll-to-top").fadeOut(1000);
+      }
+    }
+    function headerStyle() {
+      if ($("#header").length) {
+        var windowpos = $(window).scrollTop();
+        if (windowpos >= 200) {
+          $("#header").addClass("fixed-header");
+        } else {
+          $("#header").removeClass("fixed-header");
+        }
+      }
+    }
+
     if ($(".wow").length) {
       var wow = new WOW({
         boxClass: "wow", // animated element css class (default is wow)
@@ -35,16 +92,21 @@ const Nosotros = () => {
       });
       wow.init();
     }
+    $(window).on("scroll", function () {
+      jumptotop();
+      headerStyle();
+      factCounter();
+    });
   });
-  const [result] = useQuery({ query: AboutText });
+  // const [result] = useQuery({ query: AboutText });
 
-  const { data, fetching, error } = result;
+  // const { data, fetching, error } = result;
 
-  if (fetching) return <p>Fetching products</p>;
-  if (error) return <p>Oh no... {error.message}</p>;
+  // if (fetching) return <p>Fetching products</p>;
+  // if (error) return <p>Oh no... {error.message}</p>;
 
   return (
-    <section class="full-row about-company margin-top-100">
+    <section class="full-row about-company">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -54,15 +116,19 @@ const Nosotros = () => {
               data-wow-duration="700ms"
             >
               <h2 class="title wow">
-                <span>Bienvenido </span>
-                {result.data.nosotrossConnection.edges[0].node.tituloPrincipal}
+                <span>Bienvenido a </span>
+                Quultiva
               </h2>
               <span class="sub-title">
-                {" "}
-                {result.data.nosotrossConnection.edges[0].node.subtituloAbout}
+                Agricultura sustentable al alcance de todos
               </span>
               <div class="text-area">
-                {result.data.nosotrossConnection.edges[0].node.subtituloAbout2}
+                En quultiva encontrarás el apoyo técnico y suficiente para que
+                puedas emprender esa idea que tienes, empleando técnicas y
+                productos amigables con el medio ambiente. Con el apoyo de
+                profesionales y aplicando las tecnologías disponibles, diseñamos
+                proyectos funcionales a la medida del cliente haciendo uso
+                eficiente de los recursos disponibles.
               </div>
             </div>
 
@@ -144,7 +210,7 @@ const Nosotros = () => {
           <div class="col-md-4">
             <img
               class="none-mobile"
-              src={result.data.nosotrossConnection.edges[5].node.soloImagen.url}
+              src="https://i.imgur.com/b3uHPlM.png"
               alt=""
             />
           </div>
@@ -155,64 +221,32 @@ const Nosotros = () => {
           <div class="col-md-4 col-sm-4">
             <div class="dark-gradient about-link">
               <img
-                src={
-                  result.data.nosotrossConnection.edges[4].node.soloImagen.url
-                }
-                alt=""
+                src="https://i.imgur.com/PnJn5BR.png"
+                alt="mercado libre pagos"
               />
               <div class="overlay">
-                <h5 class="inner-title">
-                  {" "}
-                  {
-                    result.data.nosotrossConnection.edges[4].node
-                      .tituloPrincipal
-                  }
-                </h5>
-                <a href="#" class="btn-link">
-                  Leer más
-                </a>
+                <h5 class="inner-title">Protege tu inversión</h5>
               </div>
             </div>
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="dark-gradient about-link">
-              <img
-                src={
-                  result.data.nosotrossConnection.edges[2].node.soloImagen.url
-                }
-                alt="sdscsf"
-              />
+              <img src="https://i.imgur.com/3caXb7M.png" alt="sdscsf" />
               <div class="overlay">
-                <h5 class="inner-title">
-                  {
-                    result.data.nosotrossConnection.edges[2].node
-                      .tituloPrincipal
-                  }
-                </h5>
-                <a href="#" class="btn-link">
-                  Leer más
-                </a>
+                <h5 class="inner-title">Biogreen</h5>
+                <p class="inner-title">Agricultura en tu hogar</p>
+                <Link to="biogreen" class="btn-link">
+                  Ver Biogreens
+                </Link>
               </div>
             </div>
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="dark-gradient about-link">
-              <img
-                src={
-                  result.data.nosotrossConnection.edges[3].node.soloImagen.url
-                }
-                alt="big"
-              />
+              <img src="https://i.imgur.com/bXRU0ci.png" alt="big" />
               <div class="overlay">
-                <h5 class="inner-title">
-                  {
-                    result.data.nosotrossConnection.edges[3].node
-                      .tituloPrincipal
-                  }
-                </h5>
-                <a href="#" class="btn-link">
-                  Saber más
-                </a>
+                <h5 class="inner-title">Insumos Agricolas</h5>
+                <p class="inner-title">Los Mejores Precios</p>
               </div>
             </div>
           </div>

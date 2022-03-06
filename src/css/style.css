@@ -2318,6 +2318,32 @@ a.scroll-btn {
   height: auto;
   position: relative;
 }
+
+#bannerContacto:before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#bannerHuertos {
+  background: url("../images/huertos-banner.png") no-repeat fixed;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#bannerHuertos:before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .page-title {
   color: #fff;
   padding: 0;

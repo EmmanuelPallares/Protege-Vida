@@ -19,9 +19,7 @@ const SideBarServices = () => {
           {Productos.map((id, name) => (
             <li key={name}>
               <a href="garden-care.html">
-                <span>
-                  <i class="flaticon-travel"></i>
-                </span>
+                <span></span>
                 {id.name}
               </a>
             </li>

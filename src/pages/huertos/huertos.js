@@ -5,7 +5,7 @@ import Slider from "../../components/Slider/Slider";
 const Huertos = () => {
   return (
     <div>
-      <PageBanner title="huertos" inicio="inicio" />
+      <PageBanner title="huertos" inicio="Inicio" banner="banner" />
       <div class="full-row">
         <div class="container">
           <SideBarServices />
@@ -20,7 +20,7 @@ const Huertos = () => {
                     </div>
                     <div class="overview-caption">
                       <h4 class="inner-title">
-                        <span>Quultiva</span> Huertos
+                        <span>Galería</span> Huertos
                       </h4>
                     </div>
                   </div>

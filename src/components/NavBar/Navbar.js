@@ -47,6 +47,19 @@ const Navbar = () => {
           $(".dropdown ").removeClass("visible");
         }
       });
+      if ($(".main-menu li.dropdown ul").length) {
+        $(".main-menu li.dropdown").append('<div class="dropdown-btn"></div>');
+
+        //Dropdown Button
+        $(".main-menu li.dropdown .dropdown-btn").on("click", function () {
+          $(this).prev("ul").slideToggle(500);
+        });
+
+        //Disable dropdown parent link
+        $(".navigation li.dropdown > a").on("click", function (e) {
+          e.preventDefault();
+        });
+      }
     });
   }, []);
   // const [result] = useQuery({ query: navegacionsConnection });
@@ -91,17 +104,15 @@ const Navbar = () => {
                 {/* Inicio */}
                 <ul class="navigation nav navbar-nav navbar-left">
                   <li class="dropdown">
-                    <Link class="dropdown-toggle" data-toggle="dropdown" to="/">
-                      Inicio
-                    </Link>
+                    <a to="/">Inicio</a>
                   </li>
 
                   {/* Productos*/}
                   <li class="dropdown">
-                    <Link class="dropdown-toggle" data-toggle="dropdown" to="/">
+                    <a class="dropdown-toggle" data-toggle="dropdown" to="/">
                       Productos
                       <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </Link>
+                    </a>
                     <ul class="dropdown-menu">
                       <li>
                         <Link to="/huertos">Huertos</Link>
@@ -135,24 +146,20 @@ const Navbar = () => {
 
                   {/* Como Comprar */}
                   <li class="dropdown">
-                    <Link
+                    <a
                       class="dropdown-toggle"
                       data-toggle="dropdown"
                       to="como-comprar"
                     >
                       Como Comprar
-                    </Link>
+                    </a>
                   </li>
 
                   {/* Blog */}
                   <li class="dropdown">
-                    <Link
-                      class="dropdown-toggle"
-                      data-toggle="dropdown"
-                      to="blog"
-                    >
+                    <a class="dropdown-toggle" data-toggle="dropdown" to="blog">
                       Blog
-                    </Link>
+                    </a>
                   </li>
 
                   {/* <div>
@@ -273,13 +280,13 @@ const Navbar = () => {
 
                   {/* Contacto */}
                   <li class="dropdown">
-                    <Link
+                    <a
                       class="dropdown-toggle"
                       data-toggle="dropdown"
                       to="contacto"
                     >
                       Contacto
-                    </Link>
+                    </a>
                   </li>
                   <li>{/* <a href="contact.html">Contacto</a> */}</li>
                   {/* <li>
