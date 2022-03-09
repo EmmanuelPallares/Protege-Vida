@@ -104,15 +104,15 @@ const Navbar = () => {
                 {/* Inicio */}
                 <ul class="navigation nav navbar-nav navbar-left">
                   <li class="dropdown">
-                    <a to="/">Inicio</a>
+                    <Link to="/">Inicio</Link>
                   </li>
 
                   {/* Productos*/}
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" to="/">
+                    <Link class="dropdown-toggle" data-toggle="dropdown" to="/">
                       Productos
                       <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
+                    </Link>
                     <ul class="dropdown-menu">
                       <li>
                         <Link to="/huertos">Huertos</Link>
@@ -146,20 +146,24 @@ const Navbar = () => {
 
                   {/* Como Comprar */}
                   <li class="dropdown">
-                    <a
+                    <Link
                       class="dropdown-toggle"
                       data-toggle="dropdown"
                       to="como-comprar"
                     >
                       Como Comprar
-                    </a>
+                    </Link>
                   </li>
 
                   {/* Blog */}
                   <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" to="blog">
+                    <Link
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      to="blog"
+                    >
                       Blog
-                    </a>
+                    </Link>
                   </li>
 
                   {/* <div>
@@ -280,13 +284,13 @@ const Navbar = () => {
 
                   {/* Contacto */}
                   <li class="dropdown">
-                    <a
+                    <Link
                       class="dropdown-toggle"
                       data-toggle="dropdown"
                       to="contacto"
                     >
                       Contacto
-                    </a>
+                    </Link>
                   </li>
                   <li>{/* <a href="contact.html">Contacto</a> */}</li>
                   {/* <li>
