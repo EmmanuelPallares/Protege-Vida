@@ -118,16 +118,16 @@ const Navbar = () => {
                         <Link to="/huertos">Huertos</Link>
                       </li>
                       <li>
-                        <Link to="/">Plagas</Link>
+                        <Link to="/plagas">Plagas</Link>
                       </li>
                       <li>
-                        <Link to="/">Riego Insumos</Link>
+                        <Link to="/riego-insumos">Riego Insumos</Link>
                       </li>
                       <li>
-                        <Link to="/">Fertilizantes</Link>
+                        <Link to="/fertilizantes">Fertilizantes</Link>
                       </li>
                       <li>
-                        <Link to="/">Cultivo</Link>
+                        <Link to="/cultivo">Cultivo</Link>
                       </li>
                       <li>
                         <Link to="/">Biogreen</Link>

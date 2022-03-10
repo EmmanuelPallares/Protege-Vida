@@ -4,36 +4,43 @@ const Productos = [
   {
     id: 1,
     name: "Huertos",
+    slug: "huertos",
   },
   {
     id: 2,
     name: "Plagas",
+    slug: "plagas",
   },
-  { id: 3, name: "Riego Insumos" },
+  { id: 3, slug: "fertilizantes", name: "Fertilizantes" },
   {
     id: 4,
     name: "Fertilizantes",
+    slug: "fertilizantes",
   },
   {
     id: 5,
     name: "Cultivo",
+    slug: "cultivo",
   },
   {
     id: 6,
     name: "Biogreen",
+    slug: "biogreen",
   },
   {
     id: 7,
     name: "Invernaderos Mediana Escala",
+    slug: "invernaderos-mediana-escala",
   },
   {
     id: 8,
     name: "Invernaderos Escala Comercial",
+    slug: "invernaderos-escala-comercial",
   },
   {
     id: 9,
     name: "Accesorios para invernadero",
-    path: "/accesorios-para-invernadero",
+    slug: "accesorios-para-invernadero",
   },
 ];
 const Footer = () => {
@@ -75,9 +82,9 @@ const Footer = () => {
                   <h3 class="footer-title">Servicios</h3>
                   <div class="footer-content">
                     <ul class="ft-list">
-                      {Productos.map((id, name, path) => (
+                      {Productos.map((id, name, slug) => (
                         <li key={name}>
-                          <Link to={path}>
+                          <Link to={`${id.slug}`}>
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
 
                             {id.name}
